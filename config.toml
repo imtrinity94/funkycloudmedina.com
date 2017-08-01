@@ -1,0 +1,4 @@
+baseURL = "https://www.funkycloudmedina.com/"
+languageCode = "en-us"
+title = "Funky Cloud Medina"
+theme = "hyde"
