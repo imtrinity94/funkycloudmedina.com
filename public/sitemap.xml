@@ -3,17 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.funkycloudmedina.com/categories/</loc>
+    <loc>https://funkycloudmedina.azurewebsites.net/posts/welcome-to-hugo-powered-funky-cloud-medina/</loc>
+    <lastmod>2017-08-01T21:23:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://funkycloudmedina.azurewebsites.net/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.funkycloudmedina.com/</loc>
+    <loc>https://funkycloudmedina.azurewebsites.net/</loc>
+    <lastmod>2017-08-01T21:23:09+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.funkycloudmedina.com/tags/</loc>
+    <loc>https://funkycloudmedina.azurewebsites.net/posts/</loc>
+    <lastmod>2017-08-01T21:23:09+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://funkycloudmedina.azurewebsites.net/tags/</loc>
     <priority>0</priority>
   </url>
   
