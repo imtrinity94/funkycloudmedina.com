@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Funky Cloud Medina</title>
-    <link>https://wa-stellioswilliams.azurewebsites.net/posts/</link>
+    <link>https://wa-stellioswilliamscom.azurewebsites.net/posts/</link>
     <description>Recent content in Posts on Funky Cloud Medina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Aug 2017 21:23:09 +1000</lastBuildDate>
     
-	<atom:link href="https://wa-stellioswilliams.azurewebsites.net/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wa-stellioswilliamscom.azurewebsites.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome to Hugo-powered FunkyCloudMedina!</title>
-      <link>https://wa-stellioswilliams.azurewebsites.net/posts/welcome-to-hugo-powered-funky-cloud-medina/</link>
+      <link>https://wa-stellioswilliamscom.azurewebsites.net/posts/welcome-to-hugo-powered-funky-cloud-medina/</link>
       <pubDate>Tue, 01 Aug 2017 21:23:09 +1000</pubDate>
       
-      <guid>https://wa-stellioswilliams.azurewebsites.net/posts/welcome-to-hugo-powered-funky-cloud-medina/</guid>
+      <guid>https://wa-stellioswilliamscom.azurewebsites.net/posts/welcome-to-hugo-powered-funky-cloud-medina/</guid>
       <description>After a massive ten posts on my Wordpress blog, I&amp;rsquo;ve decided to move my blog into a text based management framework. The site is generated using Hugo.</description>
     </item>
     
