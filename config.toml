@@ -1,11 +1,11 @@
-baseURL = "https://www.funkycloudmedina.com/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Funky Cloud Medina"
 theme = "Blackburn"
 
 author = "Stellios Williams"
 # Shown in the side menu
-copyright = "&copy; 2016. All rights reserved."
+copyright = "&copy; 2016-2017. All rights reserved."
 canonifyurls = true
 paginate = 10
 
@@ -13,12 +13,18 @@ paginate = 10
   tag = "tags"
   topic = "topics"
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+  preservetaxonomynames = true
+
 [params]
   # Shown in the home page
-  subtitle = "A Hugo Theme"
-  brand = "Blackburn"
+  subtitle = "Getting funky with clouds."
+  brand = "TheNewStellW"
   googleAnalytics = "Your Google Analytics tracking ID"
-  disqus = "Your Disqus shortname"
+  # disqus = "Your Disqus shortname"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   highlightjs_extra_languages = ["yaml"]
@@ -27,6 +33,9 @@ paginate = 10
   # (relative to /static folder)
   custom_css = ["css/my.css"]
   custom_js = ["js/my.js"]
+
+[permalinks]
+  post = "/:year/:month/:title/"
 
 [menu]
   # Shown in the side menu.
@@ -53,3 +62,51 @@ paginate = 10
     pre = "<i class='fa fa-phone fa-fw'></i>"
     weight = 3
     url = "/contact/"
+
+[social]
+  # Link your social networking accounts to the side menu
+  # by entering your username or ID.
+
+  # SNS microblogging
+  twitter = "@TheNewStellW"
+  # gnusocial = "*" # Specify href (e.g. https://quitter.se/yourusername)
+  # facebook = "*"
+  # googleplus = "*"
+  # weibo = "*"
+  # tumblr = "*"
+
+  # SNS photo/video sharing
+  # instagram = "*"
+  # flickr = "*"
+  # photo500px = "*"
+  # pinterest = "*"
+  # youtube = "*"
+  # vimeo = "*"
+  # vine = "*"
+  # slideshare = "*"
+
+  # SNS career oriented
+  linkedin = "stellios-williams-2762153b"
+  # xing = "*"
+
+  # SNS news
+  #reddit = "*"
+  #hackernews = "*"
+
+  # Techie
+  github = "TheNewStellW"
+  #gitlab = "*"
+  #bitbucket = "*"
+  #stackoverflow = "*"
+  #serverfault = "*"
+
+  # Gaming
+  #steam = "*"
+  #mobygames = "*"
+
+  # Music
+  #lastfm = "*"
+  #discogs = "*"
+
+  # Other
+  #keybase = "*"
