@@ -2,13 +2,105 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Funky Cloud Medina</title>
-    <link>https://wa-stellioswilliamscom.azurewebsites.net/tags/</link>
+    <link>http://www.funkycloudmedina.com/tags/</link>
     <description>Recent content in Tags on Funky Cloud Medina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 07 Jul 2017 17:43:00 +1000</lastBuildDate>
     
-	<atom:link href="https://wa-stellioswilliamscom.azurewebsites.net/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.funkycloudmedina.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Certificates</title>
+      <link>http://www.funkycloudmedina.com/tags/certificates/</link>
+      <pubDate>Fri, 07 Jul 2017 17:43:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/certificates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Certification</title>
+      <link>http://www.funkycloudmedina.com/tags/certification/</link>
+      <pubDate>Wed, 12 Jul 2017 08:35:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/certification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Federation</title>
+      <link>http://www.funkycloudmedina.com/tags/federation/</link>
+      <pubDate>Mon, 12 Dec 2016 15:28:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/federation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Professional</title>
+      <link>http://www.funkycloudmedina.com/tags/professional/</link>
+      <pubDate>Wed, 12 Jul 2017 08:35:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/professional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psc</title>
+      <link>http://www.funkycloudmedina.com/tags/psc/</link>
+      <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/psc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vcenter</title>
+      <link>http://www.funkycloudmedina.com/tags/vcenter/</link>
+      <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/vcenter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vcloud Director</title>
+      <link>http://www.funkycloudmedina.com/tags/vcloud-director/</link>
+      <pubDate>Fri, 07 Jul 2017 17:43:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/vcloud-director/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vcsa</title>
+      <link>http://www.funkycloudmedina.com/tags/vcsa/</link>
+      <pubDate>Tue, 10 Jan 2017 10:00:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/vcsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vmware</title>
+      <link>http://www.funkycloudmedina.com/tags/vmware/</link>
+      <pubDate>Wed, 12 Jul 2017 08:35:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/vmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vsphere</title>
+      <link>http://www.funkycloudmedina.com/tags/vsphere/</link>
+      <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/tags/vsphere/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

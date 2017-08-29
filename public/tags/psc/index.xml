@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Psc on Funky Cloud Medina</title>
+    <link>http://www.funkycloudmedina.com/tags/psc/</link>
+    <description>Recent content in Psc on Funky Cloud Medina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 26 Apr 2017 17:46:00 +1000</lastBuildDate>
+    
+	<atom:link href="http://www.funkycloudmedina.com/tags/psc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PSC 6.0U3 not respecting certool.cfg settings when generating VMCA CSR</title>
+      <link>http://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</link>
+      <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</guid>
+      <description>After a very successful and quick migration from Windows SSO 5.5 U3e installation to a Platform Services Controller v6.0U3 appliance I was ready to get my VMCA into action.
+We have a corporate internal Microsoft CA with the VMware certificate templates already created as per VMware KB 2112009. Everything was coming up Milhouse, until CSR generation time using the &amp;lsquo;certificate-manager&amp;rsquo; on the PSCs.
+After stepping through the &amp;lsquo;certificate-manager&amp;rsquo; wizard and having the CSR and private key files sent to a directory of my choosing, I quickly inspected the CSR using openssl to make sure I was on the right track:</description>
+    </item>
+    
+    <item>
+      <title>Empty inventory after SSO v5.5 to PSC v6.0 U3 migration</title>
+      <link>http://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/</link>
+      <pubDate>Mon, 24 Apr 2017 07:46:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/</guid>
+      <description>After performing the vSphere v5.5 to vSphere 6.0 migration in our testing environment with great success, I began work on our production environment. First things first, migrating Windows SSO to PSC appliance.
+I had successfully converted the first machine, and started doing some testing. Things like logging into the thick client and checking all vCenter servers and basic login services.
+Problem
+Out of 6 vCenter servers, only 1 was having issues.</description>
+    </item>
+    
+  </channel>
+</rss>

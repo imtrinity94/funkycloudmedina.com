@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.26" />
+
+  <title>SYSTEM_REFRESH_VIMSERVER – Could not register vCloud Director as an extension to vCenter Server &middot; Funky Cloud Medina</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://www.funkycloudmedina.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/my.css">
+  
+  
+    <script src="http://www.funkycloudmedina.com/js/my.js"></script>
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://www.funkycloudmedina.com/">TheNewStellW</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+  
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/@TheNewStellW" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/stellios-williams-2762153b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/TheNewStellW" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+  
+  <div class="pure-menu social">
+    <ul class="pure-menu-list">
+        
+        <a href="https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&ui=www_cert" target="_blank"><img src=/logos/vcix6-dcv-design.png></a>
+
+        
+        <a href="https://www.microsoft.com/en-sa/learning/mcse-cloud-platform-infrastructure.aspx" target="_blank"><img src=/logos/mcse-cloud-white.png></a>
+</ul>
+</div>
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016-2017. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>SYSTEM_REFRESH_VIMSERVER – Could not register vCloud Director as an extension to vCenter Server</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>20 Mar 2017, 13:30</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vcloud-director">vCloud Director</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vcenter">vCenter</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>While trying to troubleshoot another problem, we tried Refreshing vCloud to vCenter which includes registering/updating the extension. This is when we hit a beauty we’d never seen before:</p>
+
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <img
+        class="pure-img-responsive"
+        src="http://www.funkycloudmedina.com/images/system-refresh-vimserver.png"
+        alt="">
+    </div>
+  </div>
+  
+
+</div>
+
+
+<p>Alright, calm down. Probably something with the network, right? And  if it’s not the network then it’s probably DNS. Right? Oh how I wish that were so.</p>
+
+<p>I dug around in the vCenter MOB and found the vCloud Director extension. As expected it already had a “vCloud Director-1” named extension. What I found odd was the last heartbeat time was back in 2013. Interestingly enough the last version recorded was also v5.1.2. I say interestingly because we are running v8.10.1 for SP.</p>
+
+<p>Jumping into our test environment, I performed a Refresh of our test vCloud instance to vCenter and lo and behold it happened there too! I couldn’t find anything in the vCloud logs reporting the why behind this failure, but I needed to get this running, and quick too!</p>
+
+<p>Knowing that the vCloud DB stores its own references to the vCenter MOB, and that vCloud would try to register itself as vCloud Director-1 again, I theorised that we could remove the existing extension and perform another Refresh without causing any issues.</p>
+
+<p>So, that’s what I did right in the test environment. It went without a hitch. Rolled the same change out in production and it went beautifully.</p>
+
+<p>If you’re getting this error, I’d suggest taking a backup of your vCenter server/DB and removing the existing vCloud Director extension.</p>
+
+<p>Removing the extension (from <a href="https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1025360">KB1025360</a>):</p>
+
+<p>As always, take a backup and a snapshot of your vCenter Server and DB before doing this.</p>
+
+<ol>
+<li>In a web browser, navigate to <a href="http://vCenter_Server_name_or_IP/mob">http://vCenter_Server_name_or_IP/mob</a>.
+
+<ul>
+<li>Where vCenter_Server_name_or_IP/mob is the name of your vCenter Server or its IP address.</li>
+</ul></li>
+<li>Click Content.</li>
+<li>Click ExtensionManager.</li>
+<li>Select and copy the name of the plug-in you want to remove from the list of values under Properties.</li>
+<li>Click UnregisterExtension. A new window appears.</li>
+<li>Paste the key of the plug-in and click Invoke Method. This removes the plug-in and returns a void result.</li>
+<li>Close the window.</li>
+<li>Refresh the Managed Object Type:ManagedObjectReference:ExtensionManager window to verify that the plug-in is removed successfully</li>
+</ol>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/">‘java.lang.NullPointerException’ received when modifying objects in vCloud Director</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/">Empty inventory after SSO v5.5 to PSC v6.0 U3 migration</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="http://www.funkycloudmedina.com/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certificates on Funky Cloud Medina</title>
+    <link>http://www.funkycloudmedina.com/tags/certificates/</link>
+    <description>Recent content in Certificates on Funky Cloud Medina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 07 Jul 2017 17:43:00 +1000</lastBuildDate>
+    
+	<atom:link href="http://www.funkycloudmedina.com/tags/certificates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CA-signed vCloud Director certificates no longer trusted – SAN missing</title>
+      <link>http://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/</link>
+      <pubDate>Fri, 07 Jul 2017 17:43:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/</guid>
+      <description>Hello again! Today&amp;rsquo;s adventures drove me a little wild&amp;hellip;
+Some background first. In my test environment, I have a full vCloud Director v8.10.1 deployment, load balanced with an F5 LTM. The certificates are loaded on the F5 so that traffic is terminated and re-encrypted on it&amp;rsquo;s way to the vCloud cells. Since deployment, both the http and console FQDNs functioned as expected. This all changed just a few months ago&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>PSC 6.0U3 not respecting certool.cfg settings when generating VMCA CSR</title>
+      <link>http://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</link>
+      <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</guid>
+      <description>After a very successful and quick migration from Windows SSO 5.5 U3e installation to a Platform Services Controller v6.0U3 appliance I was ready to get my VMCA into action.
+We have a corporate internal Microsoft CA with the VMware certificate templates already created as per VMware KB 2112009. Everything was coming up Milhouse, until CSR generation time using the &amp;lsquo;certificate-manager&amp;rsquo; on the PSCs.
+After stepping through the &amp;lsquo;certificate-manager&amp;rsquo; wizard and having the CSR and private key files sent to a directory of my choosing, I quickly inspected the CSR using openssl to make sure I was on the right track:</description>
+    </item>
+    
+    <item>
+      <title>vSphere 6 certificate templates with SHA256 encryption</title>
+      <link>http://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</link>
+      <pubDate>Tue, 10 Jan 2017 10:00:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</guid>
+      <description>I was just in the middle of configuring a PSC 6.0 node’s VMCA as an intermediate CA and, in traditional fashion, went to request a certificate from a Windows Server 2008 R2 Microsoft CA using the web enrollment form (as per this VMware KB article).
+Oddly enough though my brand spanking new vSphere 6.0 machine and intermediate CA certificate templates were missing from the template selection drop down.
+I had a look around online and found that MS CA v3 certificate templates are not supported in the web enrollment form.</description>
+    </item>
+    
+  </channel>
+</rss>

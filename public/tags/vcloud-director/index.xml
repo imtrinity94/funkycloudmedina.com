@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vcloud Director on Funky Cloud Medina</title>
+    <link>http://www.funkycloudmedina.com/tags/vcloud-director/</link>
+    <description>Recent content in Vcloud Director on Funky Cloud Medina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 07 Jul 2017 17:43:00 +1000</lastBuildDate>
+    
+	<atom:link href="http://www.funkycloudmedina.com/tags/vcloud-director/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CA-signed vCloud Director certificates no longer trusted – SAN missing</title>
+      <link>http://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/</link>
+      <pubDate>Fri, 07 Jul 2017 17:43:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/</guid>
+      <description>Hello again! Today&amp;rsquo;s adventures drove me a little wild&amp;hellip;
+Some background first. In my test environment, I have a full vCloud Director v8.10.1 deployment, load balanced with an F5 LTM. The certificates are loaded on the F5 so that traffic is terminated and re-encrypted on it&amp;rsquo;s way to the vCloud cells. Since deployment, both the http and console FQDNs functioned as expected. This all changed just a few months ago&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>SYSTEM_REFRESH_VIMSERVER – Could not register vCloud Director as an extension to vCenter Server</title>
+      <link>http://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/</link>
+      <pubDate>Mon, 20 Mar 2017 13:30:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/</guid>
+      <description>While trying to troubleshoot another problem, we tried Refreshing vCloud to vCenter which includes registering/updating the extension. This is when we hit a beauty we’d never seen before:
+   Alright, calm down. Probably something with the network, right? And if it’s not the network then it’s probably DNS. Right? Oh how I wish that were so.
+I dug around in the vCenter MOB and found the vCloud Director extension.</description>
+    </item>
+    
+    <item>
+      <title>‘java.lang.NullPointerException’ received when modifying objects in vCloud Director</title>
+      <link>http://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/</link>
+      <pubDate>Mon, 20 Mar 2017 11:36:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/</guid>
+      <description>Roughly 2 weeks ago one of our vCloud Director tenants reported an error when attempting to increase a disk on their VM. They were told to contact their cloud administrator (yay). When we tried to perform the increase, we received an error we’d never seen before: “java.lang.NullPointerException”.
+   Here is what we checked:
+ Confirm the tenant Org vDC has the appropriate resources available (this was an ‘Allocation’ style vDC).</description>
+    </item>
+    
+    <item>
+      <title>vCloud Director and SAML Federation</title>
+      <link>http://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</link>
+      <pubDate>Mon, 12 Dec 2016 15:28:00 +1000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</guid>
+      <description>I had a few issues getting vCloud Director and SAML federation playing nicely. By issues, I mean there wasn’t an explicit how-to in VMware’s doco. The big issues were group-based authentication and authenticating against a user&amp;rsquo;s email address instead of their UPN.
+Using the following article from pablovirtualization I was able to get vCloud Director federated to an ADFS SAML endpoint.
+https://pablovirtualization.wordpress.com/2015/01/13/vcloud-director-and-microsoft-ad-fs-active-director-federation-service-authentication/
+This allowed users to login using their UPN.</description>
+    </item>
+    
+  </channel>
+</rss>

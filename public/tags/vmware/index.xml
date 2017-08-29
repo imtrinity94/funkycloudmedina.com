@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Funky Cloud Medina</title>
-    <link>http://www.funkycloudmedina.com/</link>
-    <description>Recent content on Funky Cloud Medina</description>
+    <title>Vmware on Funky Cloud Medina</title>
+    <link>http://www.funkycloudmedina.com/tags/vmware/</link>
+    <description>Recent content in Vmware on Funky Cloud Medina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
     <lastBuildDate>Wed, 12 Jul 2017 08:35:00 +1000</lastBuildDate>
     
-	<atom:link href="http://www.funkycloudmedina.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.funkycloudmedina.com/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -110,26 +110,6 @@ Turns out, you must run the vcsa_setup.</description>
 Using the following article from pablovirtualization I was able to get vCloud Director federated to an ADFS SAML endpoint.
 https://pablovirtualization.wordpress.com/2015/01/13/vcloud-director-and-microsoft-ad-fs-active-director-federation-service-authentication/
 This allowed users to login using their UPN.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.funkycloudmedina.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.funkycloudmedina.com/about/</guid>
-      <description>About Me Hello, I&amp;rsquo;m Stellios. This is my blog/dumping ground for anything private and public cloud related.
-I&amp;rsquo;m VCIX6 and MCSE certified with AWS certifications coming soon. I love private cloud architecture and public cloud flexibility.
-I got sick of encountering problems in my current workplace that were so unique you couldn&amp;rsquo;t find the fixes online. Anything I manage to fix or fix with a vendors assistance will be put here for everyone to enjoy.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.funkycloudmedina.com/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.funkycloudmedina.com/contact/</guid>
-      <description>Contacting me If you&amp;rsquo;d like to get in contact, check our my Twitter and LinkedIn links in the sidebar.</description>
     </item>
     
   </channel>

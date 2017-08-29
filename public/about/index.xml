@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Funky Cloud Medina</title>
+    <link>http://www.funkycloudmedina.com/about/</link>
+    <description>Recent content in Abouts on Funky Cloud Medina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
+    
+	<atom:link href="http://www.funkycloudmedina.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://www.funkycloudmedina.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.funkycloudmedina.com/about/</guid>
+      <description>About Me Hello, I&amp;rsquo;m Stellios. This is my blog/dumping ground for anything private and public cloud related.
+I&amp;rsquo;m VCIX6 and MCSE certified with AWS certifications coming soon. I love private cloud architecture and public cloud flexibility.
+I got sick of encountering problems in my current workplace that were so unique you couldn&amp;rsquo;t find the fixes online. Anything I manage to fix or fix with a vendors assistance will be put here for everyone to enjoy.</description>
+    </item>
+    
+  </channel>
+</rss>

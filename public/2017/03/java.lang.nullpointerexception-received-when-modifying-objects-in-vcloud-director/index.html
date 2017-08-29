@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.26" />
+
+  <title>‘java.lang.NullPointerException’ received when modifying objects in vCloud Director &middot; Funky Cloud Medina</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://www.funkycloudmedina.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/my.css">
+  
+  
+    <script src="http://www.funkycloudmedina.com/js/my.js"></script>
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://www.funkycloudmedina.com/">TheNewStellW</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+  
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/@TheNewStellW" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/stellios-williams-2762153b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/TheNewStellW" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+  
+  <div class="pure-menu social">
+    <ul class="pure-menu-list">
+        
+        <a href="https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&ui=www_cert" target="_blank"><img src=/logos/vcix6-dcv-design.png></a>
+
+        
+        <a href="https://www.microsoft.com/en-sa/learning/mcse-cloud-platform-infrastructure.aspx" target="_blank"><img src=/logos/mcse-cloud-white.png></a>
+</ul>
+</div>
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016-2017. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>‘java.lang.NullPointerException’ received when modifying objects in vCloud Director</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>20 Mar 2017, 11:36</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vcloud-director">vCloud Director</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<p>Roughly 2 weeks ago one of our vCloud Director tenants reported an error when attempting to increase a disk on their VM. They were told to contact their cloud administrator (yay). When we tried to perform the increase, we received an error we’d never seen before: “java.lang.NullPointerException”.</p>
+
+
+
+<div class="pure-g">
+
+  
+  
+  
+  
+  <div class="pure-u-1-1">
+    <div style="padding: 0 .2em">
+      <img
+        class="pure-img-responsive"
+        src="http://www.funkycloudmedina.com/images/java-null-pointer-exception-1.png"
+        alt="">
+    </div>
+  </div>
+  
+
+</div>
+
+
+<p>Here is what we checked:</p>
+
+<ol>
+<li>Confirm the tenant Org vDC has the appropriate resources available (this was an ‘Allocation’ style vDC).</li>
+<li>Check the status of vCloud to vCenter connection and perform a vCenter Reconnect followed by a Refresh. This actually exposed another issue written about here.</li>
+<li>Check Log Insight for entries similar to this. We found the entries, but even after viewing the log in context we couldn’t find a cause or correlated action.</li>
+<li>We tested the same changes against other Org vDCs. We found that newly created test Org vDCs were fine and unaffected by whatever the root issue was. Only some of our existing Org vDCs experienced these issues.</li>
+<li>We found that it wasn’t limited to disk changes. Performing any action on infrastructure within these affected Org vDCs resulted in the same error.</li>
+</ol>
+
+<p>We spent longer than we should’ve trawling through the vCloud logs, and ended up logging an SR with VMware.</p>
+
+<p>After going through the intricate details of what we were experiencing and the testing we’d performed, VMware requested a copy of our vCloud databases and a list of affected VMs, vApps and Org vDCs.</p>
+
+<p>It was a nail biting few days, but eventually our assigned tech got back to us and found the cause of this error. There was a stale resgroup-id record in the org_prov_vdc table. Let me explain…</p>
+
+<h3 id="cause">Cause</h3>
+
+<p>There are 3 tables in the vCloud Director database that track Org vDC entities and their corresponding Org vDC resource pool and the parent vCenter resource pool. These 3 are supposed to be kept up to date/in sync by vCD:</p>
+
+<ul>
+<li><strong>vrp</strong> – this tracks Org vDC resource pool names in vCenter that correspond to Org vDCs. It also tracks the resource model (allocated, PAYG) and any compute resource settings that are applied to the resource pool.</li>
+<li><strong>vrp_rp</strong> – stores the vrp_id from the vrp table, along with the sub_rp_moref value for that vrp.</li>
+<li><strong>org_prov_vdc</strong> – stores data related more to the Org vDC entity itself (name, description, network pools, VM folder Moref IDs, resource pool Moref IDs etc)</li>
+</ul>
+
+<p>Notice the bolded “resource pool Moref IDs” comment above. This is important, as this value should be the same as what’s stored in the sub_rp_moref column in the vrp_rp table.</p>
+
+<p><strong>Disclaimer: all of the steps below were performed with VMware support.</strong></p>
+
+<p>You can find out if a particular Org vDC has a stale record in the org_prov_vdc table by performing the following queries against your vCloud Director database:</p>
+
+<pre><code>SELECT id FROM vrp WHERE name LIKE '%My Org vDC Name%'
+</code></pre>
+
+<p>This will return the vrp ID for your Org vDC. Replace the bold ID in the following query with the ID you received in the last step:</p>
+
+<pre><code>SELECT sub_rp_moref FROM vrp_rp WHERE vrp_id = 0x31JSD81AA0923NAFV801234UASD2BF76
+</code></pre>
+
+<p>Note; this ID has been changed to protect the innocent. Yours will differ.</p>
+
+<p>From the above SELECT query, you’ll get a resource group ID similar to this:</p>
+
+<pre><code>resgroup-6000
+</code></pre>
+
+<p>Run this query to find out what the current value is in org_prov_vdc table. Make sure to change the Org vDC name inside the percent signs.</p>
+
+<pre><code>SELECT sub_rp_moref FROM org_prov_vdc WHERE name LIKE '%My Org vDC Name%'
+</code></pre>
+
+<p>If the values from the vrp_rp table and the org_prov_vdc table do not match, then you’ve got a stale moref in the org_prov_vdc table.</p>
+
+<h3 id="fix">Fix</h3>
+
+<p>To fix this stale record take the resgroup ID, and the Org vDC name and run the following query:</p>
+
+<pre><code>UPDATE org_prov_vdc SET sub_rp_moref = 'resgroup-6000' where name = 'My Org vDC Name'
+</code></pre>
+
+<p>All done. You should now be able to make changes to your vCloud objects.</p>
+
+<p>If you’d like to find all Org vDCs with stale moref IDs in the database, I’ve written a small query that can do that for you:</p>
+
+<pre><code>SELECT vrp.name as vrpNAME, org_prov_vdc.name as orgprovNAME, vrp_rp.sub_rp_moref as correctMOREF, org_prov_vdc.sub_rp_moref as staleMOREF
+FROM vrp
+ JOIN org_prov_vdc
+ ON vrp.name LIKE '%' + org_prov_vdc.name + '%'
+ JOIN vrp_rp
+ ON vrp_rp.vrp_id = vrp.id
+ 
+WHERE vrp_rp.sub_rp_moref != org_prov_vdc.sub_rp_moref
+</code></pre>
+
+<p>The root cause for all of this has not been found. I’m hoping VMware support can provide us with a little more information so I can update this post.</p>
+
+<h3 id="update">Update</h3>
+
+<p>VMware were not able to provide us with a root cause, but we suspect our merging of multiple provider vDCs was the problem.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/">vSphere 6 certificate templates with SHA256 encryption</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/">SYSTEM_REFRESH_VIMSERVER – Could not register vCloud Director as an extension to vCenter Server</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="http://www.funkycloudmedina.com/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

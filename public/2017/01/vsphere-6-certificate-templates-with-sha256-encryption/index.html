@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.26" />
+
+  <title>vSphere 6 certificate templates with SHA256 encryption &middot; Funky Cloud Medina</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://www.funkycloudmedina.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://www.funkycloudmedina.com/css/my.css">
+  
+  
+    <script src="http://www.funkycloudmedina.com/js/my.js"></script>
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://www.funkycloudmedina.com/">TheNewStellW</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://www.funkycloudmedina.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+  
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/@TheNewStellW" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/stellios-williams-2762153b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/TheNewStellW" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+  
+  <div class="pure-menu social">
+    <ul class="pure-menu-list">
+        
+        <a href="https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&ui=www_cert" target="_blank"><img src=/logos/vcix6-dcv-design.png></a>
+
+        
+        <a href="https://www.microsoft.com/en-sa/learning/mcse-cloud-platform-infrastructure.aspx" target="_blank"><img src=/logos/mcse-cloud-white.png></a>
+</ul>
+</div>
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016-2017. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>vSphere 6 certificate templates with SHA256 encryption</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>10 Jan 2017, 10:00</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vsphere">vSphere</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vcsa">VCSA</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/vcenter">vCenter</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://www.funkycloudmedina.com/tags/certificates">Certificates</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>I was just in the middle of configuring a PSC 6.0 node’s VMCA as an intermediate CA and, in traditional fashion, went to request a certificate from a Windows Server 2008 R2 Microsoft CA using the web enrollment form (as per <a href="https://kb.vmware.com/selfservice/search.do?cmd=displayKC&amp;docType=kc&amp;docTypeID=DT_KB_1_1&amp;externalId=2112014">this VMware KB article</a>).</p>
+
+<p>Oddly enough though my brand spanking new <a href="https://kb.vmware.com/selfservice/search.do?cmd=displayKC&amp;docType=kc&amp;docTypeID=DT_KB_1_1&amp;externalId=2112009">vSphere 6.0 machine and intermediate CA certificate templates</a> were missing from the template selection drop down.</p>
+
+<p>I had a look around online and found that MS CA v3 certificate templates are not supported in the web enrollment form. Why is this relevant? Well, <a href="https://kb.vmware.com/selfservice/search.do?cmd=displayKC&amp;docType=kc&amp;docTypeID=DT_KB_1_1&amp;externalId=2112009">this VMware KB</a> states that if you use SHA256 encryption in your environment you must select <strong>Windows Server 2008 Enterprise</strong> as your certificate template version. That instantly sets your certificate templates to v3.</p>
+
+<p>Damn. How was I going to submit my CSR to this Microsoft CA and get back my certificates?! The Certificate Management snap-in doesn’t allow CSR files to be submitted. It’s just not an option.</p>
+
+<p>Luckily we have the trusty certreq tool. I was easily able to submit my CSR file to the Microsoft CA and get a certificate back in a simple command:</p>
+
+<p><code>Certreq -submit -attrib &quot;certificateTemplate:vSphere6.0VMCA&quot; vmca_issued_csr.csr</code></p>
+
+<p>Make sure you specify the correct certificate template. In my example above, I was after the VMCA intermediate CA template. The file specified was in my cmd working directory and is the same file the PSC’s spit out when you’re using the certificate manager tool.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://www.funkycloudmedina.com/2016/12/update-export-failed--converting-windows-sso-to-psc-appliance/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://www.funkycloudmedina.com/2016/12/update-export-failed--converting-windows-sso-to-psc-appliance/">Update Export Failed – Converting Windows SSO to PSC Appliance</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/">‘java.lang.NullPointerException’ received when modifying objects in vCloud Director</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="http://www.funkycloudmedina.com/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
