@@ -1,5 +1,6 @@
 ---
 title: "Studying for the VCAP6-Design DCV"
+tags: ["VMware", "Certification", "Professional Development"]
 date: 2017-08-29
 draft: true
 ---

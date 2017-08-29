@@ -1,6 +1,6 @@
 ---
 title: "VCAP6-DCV Design certification achieved!"
-tags: ["VMware", "Certification", "Professional"]
+tags: ["VMware", "Certification", "Professional Development"]
 date: 2017-07-12T08:35:00+10:00
 draft: false
 ---
