@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Professional Development on Funky Cloud Medina</title>
-    <link>http://www.funkycloudmedina.com/tags/professional-development/</link>
+    <link>https://www.funkycloudmedina.com/tags/professional-development/</link>
     <description>Recent content in Professional Development on Funky Cloud Medina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
     <lastBuildDate>Wed, 12 Jul 2017 08:35:00 +1000</lastBuildDate>
     
-	<atom:link href="http://www.funkycloudmedina.com/tags/professional-development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.funkycloudmedina.com/tags/professional-development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VCAP6-DCV Design certification achieved!</title>
-      <link>http://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/</link>
+      <link>https://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/</link>
       <pubDate>Wed, 12 Jul 2017 08:35:00 +1000</pubDate>
       
-      <guid>http://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/</guid>
+      <guid>https://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/</guid>
       <description>After months of studying and a Design and Deploy course for good measure, I passed the incredible VCAP6-DCV Design exam!
    This certification in combination with my VCAP5-DCA from 18 months ago has awarded me the VCIX6 title which I&amp;rsquo;m incredibly proud of. Here&amp;rsquo;s the official link from VMware about the certification: https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&amp;amp;ui=www_cert
 To give you an idea of what the Design exam is about, take a look at www.</description>

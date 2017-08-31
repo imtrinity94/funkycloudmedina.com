@@ -3,147 +3,147 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/</loc>
+    <loc>https://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/</loc>
     <lastmod>2017-07-12T08:35:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/</loc>
+    <loc>https://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/</loc>
     <lastmod>2017-07-07T17:43:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</loc>
+    <loc>https://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</loc>
     <lastmod>2017-04-26T17:46:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/</loc>
+    <loc>https://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/</loc>
     <lastmod>2017-04-24T07:46:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/</loc>
+    <loc>https://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/</loc>
     <lastmod>2017-03-20T13:30:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/</loc>
+    <loc>https://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/</loc>
     <lastmod>2017-03-20T11:36:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</loc>
+    <loc>https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</loc>
     <lastmod>2017-01-10T10:00:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2016/12/update-export-failed--converting-windows-sso-to-psc-appliance/</loc>
+    <loc>https://www.funkycloudmedina.com/2016/12/update-export-failed--converting-windows-sso-to-psc-appliance/</loc>
     <lastmod>2016-12-21T17:00:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</loc>
+    <loc>https://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</loc>
     <lastmod>2016-12-12T15:28:00+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/about/</loc>
+    <loc>https://www.funkycloudmedina.com/about/</loc>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/contact/</loc>
+    <loc>https://www.funkycloudmedina.com/contact/</loc>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/about/</loc>
+    <loc>https://www.funkycloudmedina.com/about/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/certificates/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/certificates/</loc>
     <lastmod>2017-07-07T17:43:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/certification/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/certification/</loc>
     <lastmod>2017-07-12T08:35:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/contact/</loc>
+    <loc>https://www.funkycloudmedina.com/contact/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/federation/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/federation/</loc>
     <lastmod>2016-12-12T15:28:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/</loc>
+    <loc>https://www.funkycloudmedina.com/</loc>
     <lastmod>2017-07-12T08:35:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/post/</loc>
+    <loc>https://www.funkycloudmedina.com/post/</loc>
     <lastmod>2017-07-12T08:35:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/professional-development/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/professional-development/</loc>
     <lastmod>2017-07-12T08:35:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/psc/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/psc/</loc>
     <lastmod>2017-04-26T17:46:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/</loc>
     <lastmod>2017-07-07T17:43:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/topics/</loc>
+    <loc>https://www.funkycloudmedina.com/topics/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/vcenter/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/vcenter/</loc>
     <lastmod>2017-04-26T17:46:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/vcloud-director/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/vcloud-director/</loc>
     <lastmod>2017-07-07T17:43:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/vcsa/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/vcsa/</loc>
     <lastmod>2017-01-10T10:00:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/vmware/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/vmware/</loc>
     <lastmod>2017-07-12T08:35:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.funkycloudmedina.com/tags/vsphere/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/vsphere/</loc>
     <lastmod>2017-04-26T17:46:00+10:00</lastmod>
     <priority>0</priority>
   </url>

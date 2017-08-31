@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vcenter on Funky Cloud Medina</title>
-    <link>http://www.funkycloudmedina.com/tags/vcenter/</link>
+    <link>https://www.funkycloudmedina.com/tags/vcenter/</link>
     <description>Recent content in Vcenter on Funky Cloud Medina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
     <lastBuildDate>Wed, 26 Apr 2017 17:46:00 +1000</lastBuildDate>
     
-	<atom:link href="http://www.funkycloudmedina.com/tags/vcenter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.funkycloudmedina.com/tags/vcenter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PSC 6.0U3 not respecting certool.cfg settings when generating VMCA CSR</title>
-      <link>http://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</link>
+      <link>https://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</link>
       <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
       
-      <guid>http://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</guid>
+      <guid>https://www.funkycloudmedina.com/2017/04/psc-6.0u3-not-respecting-certool.cfg-settings-when-generating-vmca-csr/</guid>
       <description>After a very successful and quick migration from Windows SSO 5.5 U3e installation to a Platform Services Controller v6.0U3 appliance I was ready to get my VMCA into action.
 We have a corporate internal Microsoft CA with the VMware certificate templates already created as per VMware KB 2112009. Everything was coming up Milhouse, until CSR generation time using the &amp;lsquo;certificate-manager&amp;rsquo; on the PSCs.
 After stepping through the &amp;lsquo;certificate-manager&amp;rsquo; wizard and having the CSR and private key files sent to a directory of my choosing, I quickly inspected the CSR using openssl to make sure I was on the right track:</description>
@@ -25,10 +25,10 @@ After stepping through the &amp;lsquo;certificate-manager&amp;rsquo; wizard and 
     
     <item>
       <title>Empty inventory after SSO v5.5 to PSC v6.0 U3 migration</title>
-      <link>http://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/</link>
+      <link>https://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/</link>
       <pubDate>Mon, 24 Apr 2017 07:46:00 +1000</pubDate>
       
-      <guid>http://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/</guid>
+      <guid>https://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/</guid>
       <description>After performing the vSphere v5.5 to vSphere 6.0 migration in our testing environment with great success, I began work on our production environment. First things first, migrating Windows SSO to PSC appliance.
 I had successfully converted the first machine, and started doing some testing. Things like logging into the thick client and checking all vCenter servers and basic login services.
 Problem
@@ -37,10 +37,10 @@ Out of 6 vCenter servers, only 1 was having issues.</description>
     
     <item>
       <title>SYSTEM_REFRESH_VIMSERVER – Could not register vCloud Director as an extension to vCenter Server</title>
-      <link>http://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/</link>
+      <link>https://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/</link>
       <pubDate>Mon, 20 Mar 2017 13:30:00 +1000</pubDate>
       
-      <guid>http://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/</guid>
+      <guid>https://www.funkycloudmedina.com/2017/03/system_refresh_vimserver--could-not-register-vcloud-director-as-an-extension-to-vcenter-server/</guid>
       <description>While trying to troubleshoot another problem, we tried Refreshing vCloud to vCenter which includes registering/updating the extension. This is when we hit a beauty we’d never seen before:
    Alright, calm down. Probably something with the network, right? And if it’s not the network then it’s probably DNS. Right? Oh how I wish that were so.
 I dug around in the vCenter MOB and found the vCloud Director extension.</description>
@@ -48,10 +48,10 @@ I dug around in the vCenter MOB and found the vCloud Director extension.</descri
     
     <item>
       <title>vSphere 6 certificate templates with SHA256 encryption</title>
-      <link>http://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</link>
+      <link>https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</link>
       <pubDate>Tue, 10 Jan 2017 10:00:00 +1000</pubDate>
       
-      <guid>http://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</guid>
+      <guid>https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</guid>
       <description>I was just in the middle of configuring a PSC 6.0 node’s VMCA as an intermediate CA and, in traditional fashion, went to request a certificate from a Windows Server 2008 R2 Microsoft CA using the web enrollment form (as per this VMware KB article).
 Oddly enough though my brand spanking new vSphere 6.0 machine and intermediate CA certificate templates were missing from the template selection drop down.
 I had a look around online and found that MS CA v3 certificate templates are not supported in the web enrollment form.</description>
@@ -59,10 +59,10 @@ I had a look around online and found that MS CA v3 certificate templates are not
     
     <item>
       <title>Update Export Failed – Converting Windows SSO to PSC Appliance</title>
-      <link>http://www.funkycloudmedina.com/2016/12/update-export-failed--converting-windows-sso-to-psc-appliance/</link>
+      <link>https://www.funkycloudmedina.com/2016/12/update-export-failed--converting-windows-sso-to-psc-appliance/</link>
       <pubDate>Wed, 21 Dec 2016 17:00:00 +1000</pubDate>
       
-      <guid>http://www.funkycloudmedina.com/2016/12/update-export-failed--converting-windows-sso-to-psc-appliance/</guid>
+      <guid>https://www.funkycloudmedina.com/2016/12/update-export-failed--converting-windows-sso-to-psc-appliance/</guid>
       <description>This isn’t a be all and end all post on converting your Windows-based SSO server to the Platform Services Controller appliance, although I found an issue when performing the migration.
 We kept receiving an “Update export failed” message when the appliance was deployed by the conversion wizard. We couldn’t understand why, and the appliance updaterunner.log file gave us no clues as to what it could be.
 Turns out, you must run the vcsa_setup.</description>
