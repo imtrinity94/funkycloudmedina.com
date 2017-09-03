@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/</loc>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/</loc>
     <lastmod>2017-07-12T08:35:00+10:00</lastmod>
   </url>
@@ -61,6 +66,12 @@
   </url>
   
   <url>
+    <loc>https://www.funkycloudmedina.com/tags/aws/</loc>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/tags/certificates/</loc>
     <lastmod>2017-07-07T17:43:00+10:00</lastmod>
     <priority>0</priority>
@@ -78,6 +89,12 @@
   </url>
   
   <url>
+    <loc>https://www.funkycloudmedina.com/tags/dns/</loc>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/tags/federation/</loc>
     <lastmod>2016-12-12T15:28:00+10:00</lastmod>
     <priority>0</priority>
@@ -85,13 +102,13 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/</loc>
-    <lastmod>2017-07-12T08:35:00+10:00</lastmod>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/post/</loc>
-    <lastmod>2017-07-12T08:35:00+10:00</lastmod>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -108,8 +125,14 @@
   </url>
   
   <url>
+    <loc>https://www.funkycloudmedina.com/tags/route53/</loc>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/tags/</loc>
-    <lastmod>2017-07-07T17:43:00+10:00</lastmod>
+    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 12 Jul 2017 08:35:00 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Updating a Route53 domain&#39;s Name Servers</title>
+      <link>https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/</guid>
+      <description>I recently had the need to update an AWS Route53 domain NS configuration so that it could be protected by CloudFlare. This domain was purchased via Route53. I had updated the hosted zone NS records with the new Name Servers, but the domain continued to point to AWS and it drove me nuts. Turns out there is another section in Route53 where you updated the NS records for your Route53 managed domain.</description>
+    </item>
     
     <item>
       <title>VCAP6-DCV Design certification achieved!</title>

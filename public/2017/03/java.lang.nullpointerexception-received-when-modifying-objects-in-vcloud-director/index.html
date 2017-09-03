@@ -284,7 +284,7 @@
 
 <ol>
 <li>Confirm the tenant Org vDC has the appropriate resources available (this was an ‘Allocation’ style vDC).</li>
-<li>Check the status of vCloud to vCenter connection and perform a vCenter Reconnect followed by a Refresh. This actually exposed another issue written about <a href="">here</a>.</li>
+<li>Check the status of vCloud to vCenter connection and perform a vCenter Reconnect followed by a Refresh. This actually exposed another issue written about.</li>
 <li>Check Log Insight for entries similar to this. We found the entries, but even after viewing the log in context we couldn’t find a cause or correlated action.</li>
 <li>We tested the same changes against other Org vDCs. We found that newly created test Org vDCs were fine and unaffected by whatever the root issue was. Only some of our existing Org vDCs experienced these issues.</li>
 <li>We found that it wasn’t limited to disk changes. Performing any action on infrastructure within these affected Org vDCs resulted in the same error.</li>

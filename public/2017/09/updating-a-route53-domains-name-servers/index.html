@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.26" />
 
-  <title>VCAP6-DCV Design certification achieved! &middot; Funky Cloud Medina</title>
+  <title>Updating a Route53 domain&#39;s Name Servers &middot; Funky Cloud Medina</title>
 
   
   
@@ -223,7 +223,7 @@
 
 
 <div class="header">
-  <h1>VCAP6-DCV Design certification achieved!</h1>
+  <h1>Updating a Route53 domain&#39;s Name Servers</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -232,7 +232,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>12 Jul 2017</time>
+    <time>01 Sep 2017</time>
   </div>
 
   
@@ -245,11 +245,11 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/aws">AWS</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/certification">Certification</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/route53">Route53</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/professional-development">Professional Development</a>
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/dns">DNS</a>
     
   </div>
   
@@ -257,47 +257,36 @@
 
 </div>
 
-  <p>After months of studying and a Design and Deploy course for good measure, I passed the incredible VCAP6-DCV Design exam!</p>
+  <p>I recently had the need to update an AWS Route53 domain NS configuration so that it could be protected by CloudFlare. This domain was purchased via Route53. I had updated the hosted zone NS records with the new Name Servers, but the domain continued to point to AWS and it drove me nuts. Turns out there is another section in Route53 where you updated the NS records for your Route53 managed domain.</p>
 
+<p>Here&rsquo;s the process start to end for Route53. I won&rsquo;t go into detail on Cloudflare changes, I&rsquo;m just assuming you&rsquo;ve already registered and have the Cloudflare NS names.</p>
 
+<ol>
+<li>Login to AWS Route53 console: <a href="https://console.aws.amazon.com/route53">https://console.aws.amazon.com/route53</a></li>
+<li>Select &ldquo;Hosted Zones&rdquo; on the left, and select the domain you wish to update</li>
+<li>Select the &ldquo;NS&rdquo; type record, and update the listed name servers to point to your name servers of choice.</li>
+<li>Save the record set.</li>
+<li>In the Route53 console, click &ldquo;Registered domains&rdquo; on the left.</li>
+<li>Select your registered domain.</li>
+<li>Towards the top right of the page, you&rsquo;ll see the original AWS name servers. Click &ldquo;Add or edit name servers&rdquo;.</li>
+<li>Enter the same name servers as step 3.</li>
+<li>AWS will process your domain change request.</li>
+</ol>
 
-<div class="pure-g">
-
-  
-  
-  
-  
-  <div class="pure-u-1-1">
-    <div style="padding: 0 .2em">
-      <img
-        class="pure-img-responsive"
-        src="https://www.funkycloudmedina.com/images/vmware-logo-vcap6-dcv-design.png"
-        alt="">
-    </div>
-  </div>
-  
-
-</div>
-
-
-<p>This certification in combination with my VCAP5-DCA from 18 months ago has awarded me the VCIX6 title which I&rsquo;m incredibly proud of. Here&rsquo;s the official link from VMware about the certification: <a href="https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&amp;ui=www_cert">https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&amp;ui=www_cert</a></p>
-
-<p>To give you an idea of what the Design exam is about, take a look at <a href="www.virtualtiers.net">www.virtualtiers.net</a>. That exam simulator is a great representation of how the exam is formatted and how you&rsquo;re tested. The content isn&rsquo;t the same as the exam for obvious reasons, but it helps.</p>
-
-<p>I&rsquo;ll be doing a quick post sometime soon on all the resources I&rsquo;ve collected during my preparation.</p>
+<p>After a few minutes (or hours) Cloudflare will pick up the changes and begin serving your site.</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/">CA-signed vCloud Director certificates no longer trusted – SAN missing</a>
+      <a href="https://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/">VCAP6-DCV Design certification achieved!</a>
     </nav>
     
   </div>
@@ -306,14 +295,8 @@
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/">Updating a Route53 domain&#39;s Name Servers</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

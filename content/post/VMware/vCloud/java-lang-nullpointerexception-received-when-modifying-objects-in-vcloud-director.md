@@ -14,7 +14,7 @@ Roughly 2 weeks ago one of our vCloud Director tenants reported an error when at
 Here is what we checked:
 
 1. Confirm the tenant Org vDC has the appropriate resources available (this was an ‘Allocation’ style vDC).
-2. Check the status of vCloud to vCenter connection and perform a vCenter Reconnect followed by a Refresh. This actually exposed another issue written about [here]({{< ref "post/system-refresh-vimserver-could-not-register-vcloud-director-as-an-extension-to-vcenter-server.md" >}}).
+2. Check the status of vCloud to vCenter connection and perform a vCenter Reconnect followed by a Refresh. This actually exposed another issue written about.
 3. Check Log Insight for entries similar to this. We found the entries, but even after viewing the log in context we couldn’t find a cause or correlated action.
 4. We tested the same changes against other Org vDCs. We found that newly created test Org vDCs were fine and unaffected by whatever the root issue was. Only some of our existing Org vDCs experienced these issues.
 5. We found that it wasn’t limited to disk changes. Performing any action on infrastructure within these affected Org vDCs resulted in the same error.
