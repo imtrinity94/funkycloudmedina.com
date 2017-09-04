@@ -23,7 +23,7 @@ paginate = 10
   # Shown in the home page
   subtitle = "Getting funky with clouds."
   brand = "TheNewStellW"
-  # googleAnalytics = "UA-105790822-1"
+  googleAnalytics = "UA-105790822-1"
   disqus = "funkycloudmedina"
   # CSS name for highlight.js
   highlightjs = "androidstudio"

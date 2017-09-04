@@ -91,4 +91,4 @@ WHERE vrp_rp.sub_rp_moref != org_prov_vdc.sub_rp_moref
 The root cause for all of this has not been found. I’m hoping VMware support can provide us with a little more information so I can update this post.
 
 ### Update
-VMware were not able to provide us with a root cause, but we suspect our merging of multiple provider vDCs was the problem.
+VMware were not able to provide us with a root cause, but we suspect our merging of multiple provider vDCs was the problem. It's very possible we had stale records or misconfigured tables. This deployment had been around since vCloud Director v1.0.
