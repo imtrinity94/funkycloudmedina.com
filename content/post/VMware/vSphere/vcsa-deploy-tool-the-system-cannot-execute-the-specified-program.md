@@ -5,7 +5,7 @@ date: 2017-09-04
 draft: true
 ---
 
-During my vSphere 5.5U3 to vSphere 6.0U3 VCSA migrations I kept getting this message from my migration server:
+During my vSphere 5.5U3 to vSphere 6.0U3 VCSA migrations I kept getting this message from the vcsa-deploy.exe tool on my migration server.
 
 >The system cannot execute the specified program.
 
@@ -15,4 +15,6 @@ Restarting the Windows server I was running it on (Windows Server 2012) wouldn't
 
 You know what did work? A hard reset of the VM. Not a guest shutdown, but a reset. 
 
-I have no idea why, but it worked. I have a feeling it may have been more of a Windows problem than a VMware problem..
+Fun fact, this is the exact same tool used by the migraiton wizard GUI that is run from the VCSA ISO.
+
+I have no idea why, but resetting the VM and not just restarting it worked.
