@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firmware on Funky Cloud Medina</title>
+    <link>https://www.funkycloudmedina.com/tags/firmware/</link>
+    <description>Recent content in Firmware on Funky Cloud Medina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 08 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.funkycloudmedina.com/tags/firmware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dell Bootable Firmware Update ISO - apply_updates.sh is invalid</title>
+      <link>https://www.funkycloudmedina.com/2017/09/dell-bootable-firmware-update-iso---apply_updates.sh-is-invalid/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2017/09/dell-bootable-firmware-update-iso---apply_updates.sh-is-invalid/</guid>
+      <description>Today I hit a bit of a speed bump during some ESXi host upgrades. I like to roll out firmware upgrades while I&amp;rsquo;m upgrading ESXi, and some Dell M620&amp;rsquo;s decided they didn&amp;rsquo;t want to play ball.
+I was using the Dell Bootable Firmware Update utility available here. While the ISO was in fact bootable, none of the scripts or inventory collectors were able to run. Repeated attempts to mount the virtual CDROM would fail, followed by this message:</description>
+    </item>
+    
+  </channel>
+</rss>

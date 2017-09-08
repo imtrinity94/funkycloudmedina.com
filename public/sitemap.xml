@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.funkycloudmedina.com/2017/09/dell-bootable-firmware-update-iso---apply_updates.sh-is-invalid/</loc>
+    <lastmod>2017-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
@@ -89,6 +94,12 @@
   </url>
   
   <url>
+    <loc>https://www.funkycloudmedina.com/tags/dell/</loc>
+    <lastmod>2017-09-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/tags/dns/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -101,14 +112,26 @@
   </url>
   
   <url>
+    <loc>https://www.funkycloudmedina.com/tags/firmware/</loc>
+    <lastmod>2017-09-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/</loc>
-    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/hardware/</loc>
+    <lastmod>2017-09-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/post/</loc>
-    <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

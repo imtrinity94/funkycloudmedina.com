@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dell Bootable Firmware Update ISO - apply_updates.sh is invalid</title>
+      <link>https://www.funkycloudmedina.com/2017/09/dell-bootable-firmware-update-iso---apply_updates.sh-is-invalid/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2017/09/dell-bootable-firmware-update-iso---apply_updates.sh-is-invalid/</guid>
+      <description>Today I hit a bit of a speed bump during some ESXi host upgrades. I like to roll out firmware upgrades while I&amp;rsquo;m upgrading ESXi, and some Dell M620&amp;rsquo;s decided they didn&amp;rsquo;t want to play ball.
+I was using the Dell Bootable Firmware Update utility available here. While the ISO was in fact bootable, none of the scripts or inventory collectors were able to run. Repeated attempts to mount the virtual CDROM would fail, followed by this message:</description>
+    </item>
     
     <item>
       <title>Updating a Route53 domain&#39;s Name Servers</title>
