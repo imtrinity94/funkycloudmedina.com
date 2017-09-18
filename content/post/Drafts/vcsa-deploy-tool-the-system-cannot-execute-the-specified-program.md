@@ -17,6 +17,6 @@ Restarting the Windows server I was running it on (Windows Server 2012) wouldn't
 
 You know what did work? A hard reset of the VM. Not a guest shutdown, but a reset. 
 
-Fun fact, this is the exact same tool used by the migraiton wizard GUI that is run from the VCSA ISO. So if you ever get non-descript errors during the migratino in the GUI try running the tool manually
+Fun fact, this is the exact same tool used by the migration wizard GUI that is run from the VCSA ISO. So if you ever get non-descript errors or the wizard fails for an unknown reason during the migration in the GUI try running the tool manually.
 
 I have no idea why, but resetting the VM and not just restarting it worked.
