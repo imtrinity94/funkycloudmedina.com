@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CassandraDB Shell - Unable to connect to any servers</title>
+      <link>https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/</guid>
+      <description>One of the core pre-requisites for vCloud Availability for vCloud Director 2.0 is CassandraDB. This database service stores replication state and storage information and is used by the HCS (vSphere Replication Cloud Service) appliance.
+As part of my strained vCloud Availability deployment I needed to build a simple CassandraDB server. VMware Docs and the vCloud Architecture blog have some great information to get you started:
+ vCloud Architecture blog - Deploying CassandraDB VMware Docs - vCloud Availability for vCloud Director Installation Guide  Symptom I built the CassandraDB server as described in the blog post and Docs pages above, but when I would try to connect to the database using the Cassandra shell (cqlsh {ip-address} 9042) I would get the following error:</description>
+    </item>
     
     <item>
       <title>vCloud Availability - vCD Gateway creation failed</title>

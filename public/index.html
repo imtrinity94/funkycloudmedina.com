@@ -237,6 +237,57 @@
   
     <article>
   <header>
+    <h2><a href="https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/">CassandraDB Shell - Unable to connect to any servers</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>31 Jan 2018</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcloud">vCloud</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcloud-availability">vCloud-Availability</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/cassandradb">CassandraDB</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  One of the core pre-requisites for vCloud Availability for vCloud Director 2.0 is CassandraDB. This database service stores replication state and storage information and is used by the HCS (vSphere Replication Cloud Service) appliance.
+As part of my strained vCloud Availability deployment I needed to build a simple CassandraDB server. VMware Docs and the vCloud Architecture blog have some great information to get you started:
+ vCloud Architecture blog - Deploying CassandraDB VMware Docs - vCloud Availability for vCloud Director Installation Guide  Symptom I built the CassandraDB server as described in the blog post and Docs pages above, but when I would try to connect to the database using the Cassandra shell (cqlsh {ip-address} 9042) I would get the following error:
+  </p>
+
+  
+  <footer>
+    <a href="https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/">vCloud Availability - vCD Gateway creation failed</a></h2>
 
     <div class="post-meta">
@@ -260,7 +311,7 @@
     
       <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcloud">vCloud</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/availability">Availability</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcloud-availability">vCloud-Availability</a>&nbsp;&#47;
     
       <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/draas">DRaaS</a>
     
@@ -673,59 +724,6 @@ I dug around in the vCenter MOB and found the vCloud Director extension.
   
   <footer>
     <a href="https://www.funkycloudmedina.com/2017/03/java.lang.nullpointerexception-received-when-modifying-objects-in-vcloud-director/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/">vSphere 6 certificate templates with SHA256 encryption</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>10 Jan 2017</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vsphere">vSphere</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcsa">VCSA</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcenter">vCenter</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/certificates">Certificates</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-  I was just in the middle of configuring a PSC 6.0 node’s VMCA as an intermediate CA and, in traditional fashion, went to request a certificate from a Windows Server 2008 R2 Microsoft CA using the web enrollment form (as per this VMware KB article).
-Oddly enough though my brand spanking new vSphere 6.0 machine and intermediate CA certificate templates were missing from the template selection drop down.
-I had a look around online and found that MS CA v3 certificate templates are not supported in the web enrollment form.
-  </p>
-
-  
-  <footer>
-    <a href="https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>

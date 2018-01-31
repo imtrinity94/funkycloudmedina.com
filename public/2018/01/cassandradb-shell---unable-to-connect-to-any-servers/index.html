@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.31.1" />
 
-  <title>Vcloud &middot; Funky Cloud Medina</title>
+  <title>CassandraDB Shell - Unable to connect to any servers &middot; Funky Cloud Medina</title>
 
   
   
@@ -36,8 +36,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="Funky Cloud Medina" href="https://www.funkycloudmedina.com/tags/vcloud/index.xml" />
   
 
   
@@ -108,10 +106,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://www.funkycloudmedina.com/tags/vcloud/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -229,16 +223,12 @@
 
 
 <div class="header">
-  <h1>Vcloud</h1>
+  <h1>CassandraDB Shell - Unable to connect to any servers</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/">CassandraDB Shell - Unable to connect to any servers</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -269,72 +259,101 @@
 
 </div>
 
-  </header>
+  
 
-  <p>
-  One of the core pre-requisites for vCloud Availability for vCloud Director 2.0 is CassandraDB. This database service stores replication state and storage information and is used by the HCS (vSphere Replication Cloud Service) appliance.
-As part of my strained vCloud Availability deployment I needed to build a simple CassandraDB server. VMware Docs and the vCloud Architecture blog have some great information to get you started:
- vCloud Architecture blog - Deploying CassandraDB VMware Docs - vCloud Availability for vCloud Director Installation Guide  Symptom I built the CassandraDB server as described in the blog post and Docs pages above, but when I would try to connect to the database using the Cassandra shell (cqlsh {ip-address} 9042) I would get the following error:
-  </p>
+<p>One of the core pre-requisites for vCloud Availability for vCloud Director 2.0 is CassandraDB. This database service stores replication state and storage information and is used by the HCS (vSphere Replication Cloud Service) appliance.</p>
+
+<p>As part of my strained <a href="https://www.funkycloudmedina.com/post/vmware/vcloud/vcloud-availability---vcd-gateway-creation-failed">vCloud Availability</a> deployment I needed to build a simple CassandraDB server. VMware Docs and the vCloud Architecture blog have some great information to get you started:</p>
+
+<ul>
+<li><a href="https://blogs.vmware.com/vcat/2017/11/deploying-cassandra-vcloud-availability-part-1.html">vCloud Architecture blog - Deploying CassandraDB</a></li>
+<li><a href="https://docs.vmware.com/en/vCloud-Availability-for-vCloud-Director/2.0/com.vmware.vcavcd.install.config.doc/GUID-D2F5D059-E61E-4EAB-AE81-DF8098E9EB7A.html">VMware Docs - vCloud Availability for vCloud Director Installation Guide</a></li>
+</ul>
+
+<h1 id="symptom">Symptom</h1>
+
+<p>I built the CassandraDB server as described in the blog post and Docs pages above, but when I would try to connect to the database using the Cassandra shell (cqlsh {ip-address} 9042) I would get the following error:</p>
+
+<blockquote>
+<p>Connection error: (&lsquo;Unable to connect to any servers&rsquo;, {&rsquo;::1&rsquo;: error(101, &ldquo;Tried connecting to [(&rsquo;::1&rsquo;, 9042, 0, 0)]. Last error: Network is unreachable&rdquo;), &lsquo;{ip-address}&rsquo;: error(111, &ldquo;Tried connecting to [(&lsquo;{ip-address}&rsquo;, 9042)]. Last error: Connection refused&rdquo;)})</p>
+</blockquote>
+
+<h1 id="investigation">Investigation</h1>
+
+<p>Plenty of Googling later showed that this might&rsquo;ve been a listening address vs listening interface config issue but VMware explicitly state that you should listen on the interface and not the IP you&rsquo;ve set. I rebuilt the server a few times thinking I had stuffed the build, but I still couldn&rsquo;t get it working&hellip;</p>
+
+<h1 id="solution">Solution</h1>
+
+<p>There is a specific <a href="https://docs.vmware.com/en/vCloud-Availability-for-vCloud-Director/2.0/com.vmware.vcavcd.install.config.doc/GUID-452096DF-EBAB-4E9D-8FFE-3ADC2E186798.html">step during the CassandraDB configuration</a> that the VMware Docs will call out as having the potential to throw a Python error. Specifically Step 1f has the following:</p>
+
+<pre><code>Enter Cassandra command line to verify setup:
+# cqlsh
+If an error regarding python occurs when running cqlsh, update Python to Python 2.7.
+</code></pre>
+
+<p>While I was not getting a Python error, I tried the Python 2.7 fix anyway as detailed in the page above:</p>
+
+<pre><code># yum install -y centos-release-SCL
+
+# yum install -y python27
+
+# scl enable python27 bash
+
+# echo &quot;/usr/lib/python2.7/site-packages/&quot; &gt; /opt/rh/python27/root/usr/lib/python2.7/site-packages/usrlocal.pth
+</code></pre>
+
+<p>Boom! The CassandraDB shell was able to connect to the database instance.</p>
+
+<p>For the record, this was on a CentOS 7 installation.</p>
+
 
   
-  <footer>
-    <a href="https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/">vCloud Availability - vCD Gateway creation failed</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>23 Jan 2018</time>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
+  <div class="pure-u-10-24">
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcloud">vCloud</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcloud-availability">vCloud-Availability</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/draas">DRaaS</a>
+    <nav class="prev">
+      <a href="https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/">vCloud Availability - vCD Gateway creation failed</a>
+    </nav>
     
   </div>
-  
-  
-
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
 
-  </header>
 
-  <p>
-  After a short break over Christmas and New Year&rsquo;s I threw myself into the latest version of vCloud Availability for vCloud Director (2.0).
-The installation of vCloud Availability for vCloud Director (vCAv) is all done through an &ldquo;installer appliance&rdquo;, a CLI and a configuration file called a &lsquo;registry&rsquo;. I opted for the &lsquo;automated&rsquo; installation using a registry file and had all of my configuration and VM deployment specs in there.
-  </p>
 
   
-  <footer>
-    <a href="https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'funkycloudmedina';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 </div>
 
 </div>
@@ -357,3 +376,4 @@ The installation of vCloud Availability for vCloud Director (vCAv) is all done t
 
 </body>
 </html>
+

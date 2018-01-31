@@ -28,7 +28,7 @@ paginate = 10
   # CSS name for highlight.js
   highlightjs = "androidstudio"
   highlightjs_extra_languages = ["yaml"]
-  dateFormat = "02 Jan 2006"
+  dateFormat = "02 January 2006"
   # Include any custom CSS and/or JS files
   # (relative to /static folder)
   custom_css = ["css/my.css"]
