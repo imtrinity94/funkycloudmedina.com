@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Availability</title>
+      <link>https://www.funkycloudmedina.com/tags/availability/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/availability/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Aws</title>
@@ -54,6 +63,15 @@
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Draas</title>
+      <link>https://www.funkycloudmedina.com/tags/draas/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/draas/</guid>
       <description></description>
     </item>
     
@@ -121,6 +139,15 @@
     </item>
     
     <item>
+      <title>Vcloud</title>
+      <link>https://www.funkycloudmedina.com/tags/vcloud/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/vcloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Vcloud Director</title>
       <link>https://www.funkycloudmedina.com/tags/vcloud-director/</link>
       <pubDate>Fri, 07 Jul 2017 17:43:00 +1000</pubDate>
@@ -141,7 +168,7 @@
     <item>
       <title>Vmware</title>
       <link>https://www.funkycloudmedina.com/tags/vmware/</link>
-      <pubDate>Wed, 12 Jul 2017 08:35:00 +1000</pubDate>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/vmware/</guid>
       <description></description>

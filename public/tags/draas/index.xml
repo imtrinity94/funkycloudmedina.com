@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Draas on Funky Cloud Medina</title>
+    <link>https://www.funkycloudmedina.com/tags/draas/</link>
+    <description>Recent content in Draas on Funky Cloud Medina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.funkycloudmedina.com/tags/draas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>vCloud Availability - vCD Gateway creation failed</title>
+      <link>https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/</guid>
+      <description>After a short break over Christmas and New Year&amp;rsquo;s I threw myself into the latest version of vCloud Availability for vCloud Director (2.0).
+The installation of vCloud Availability for vCloud Director (vCAv) is all done through an &amp;ldquo;installer appliance&amp;rdquo;, a CLI and a configuration file called a &amp;lsquo;registry&amp;rsquo;. I opted for the &amp;lsquo;automated&amp;rsquo; installation using a registry file and had all of my configuration and VM deployment specs in there.</description>
+    </item>
+    
+  </channel>
+</rss>
