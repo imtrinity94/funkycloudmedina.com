@@ -20,6 +20,7 @@ First, if you haven’t already due to some other requirement, allow your ADFS d
 `Set-ADFSClaimsProviderTrust -TargetIdentifier “AD AUTHORITY” -alternateloginID mail -lookupforest {your forest fqdn here} e.g contoso.corp`
 
 Now, brief difference between Pablo’s steps and this. When configuring the NameID transformation rule you’ll need to specify “Email” instead of “Unspecified”
+
 {{< fluid_imgs
   "pure-u-1-1|/images/adfs-transform-rule-1.png"
 >}}
