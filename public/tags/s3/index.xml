@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aws on Funky Cloud Medina</title>
-    <link>https://www.funkycloudmedina.com/tags/aws/</link>
-    <description>Recent content in Aws on Funky Cloud Medina</description>
+    <title>S3 on Funky Cloud Medina</title>
+    <link>https://www.funkycloudmedina.com/tags/s3/</link>
+    <description>Recent content in S3 on Funky Cloud Medina</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
     <lastBuildDate>Mon, 12 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.funkycloudmedina.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.funkycloudmedina.com/tags/s3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/</guid>
       <description>This post is part 1 of a 2 part series. When I&amp;rsquo;ve written and posted the second part I&amp;rsquo;ll link to it here.
 Introduction For those who don&amp;rsquo;t know what Hugo is, it&amp;rsquo;s a static website generator. Its source material is a Hugo template with your content in Markdown. I&amp;rsquo;ve used it for a while, in fact this blog is generated using Hugo. Hugo can give you an entire site in HTML/CSS and any required Javascript that you can then place anywhere on the web.</description>
-    </item>
-    
-    <item>
-      <title>Updating a Route53 domain&#39;s Name Servers</title>
-      <link>https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/</guid>
-      <description>I recently had the need to update an AWS Route53 domain NS configuration so that it could be protected by CloudFlare. This domain was purchased via Route53. I had updated the hosted zone NS records with the new Name Servers, but the domain continued to point to AWS and it drove me nuts. Turns out there is another section in Route53 where you updated the NS records for your Route53 managed domain.</description>
     </item>
     
   </channel>

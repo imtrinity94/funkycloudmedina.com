@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Auto deploy a Hugo website from GitHub to S3 - Part 1</title>
+      <link>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/</link>
+      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/</guid>
+      <description>This post is part 1 of a 2 part series. When I&amp;rsquo;ve written and posted the second part I&amp;rsquo;ll link to it here.
+Introduction For those who don&amp;rsquo;t know what Hugo is, it&amp;rsquo;s a static website generator. Its source material is a Hugo template with your content in Markdown. I&amp;rsquo;ve used it for a while, in fact this blog is generated using Hugo. Hugo can give you an entire site in HTML/CSS and any required Javascript that you can then place anywhere on the web.</description>
+    </item>
     
     <item>
       <title>CassandraDB Shell - Unable to connect to any servers</title>
