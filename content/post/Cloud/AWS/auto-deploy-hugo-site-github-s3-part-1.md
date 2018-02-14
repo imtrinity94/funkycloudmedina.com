@@ -4,7 +4,11 @@ tags: ["AWS", "Hugo", "GitHub", "Lambda", "S3", "Blog"]
 date: 2018-02-12
 draft: false
 ---
-This post is part 1 of a 2 part series. When I've written and posted the second part I'll link to it here.
+This post is part of a series. You're reading Part 1.
+
++ [Auto deploy a Hugo website from GitHub to S3 - Part 2](/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/)
+
+-----
 
 # Introduction
 
