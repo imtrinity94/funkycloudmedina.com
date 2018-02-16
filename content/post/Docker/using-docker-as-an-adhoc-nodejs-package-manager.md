@@ -24,6 +24,6 @@ From the container terminal I was able to install NodeJS and NPM:
 sudo apt-get install nodejs && sudo apt-get install npm
 ```
 
-A few 'npm install' runs later I had a folder with all of my required npm modules without touching my main OS. As I've written in my auto deployment series you can then zip the contents of your working folder and send it to Lambda.
+After changing to the /working directory and installing a few npm modules (npm install) I had a folder with all of my required modules without touching my main OS. As I've written in my auto deployment series you can then zip the contents of your working folder and send it to Lambda.
 
 You could use this process for almost anything that allows stateless modules to be stored in a folder and moved around (I'm pretty sure Python supports a similar method).
