@@ -1,4 +1,6 @@
-# About Me
+---
+title: "About me"
+---
 
 Hello, I'm Stellios. This is my personal tech related blog for anything private and public cloud related. I love (almost) anything virtual and cloud.
 
