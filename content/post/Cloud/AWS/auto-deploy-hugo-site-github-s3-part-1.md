@@ -6,8 +6,6 @@ draft: false
 ---
 This post is part of a series. You're reading Part 1.
 
-+ [Auto deploy a Hugo website from GitHub to S3 - Part 2](/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/)
-
 -----
 
 # Introduction
