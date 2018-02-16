@@ -1,7 +1,7 @@
 ---
 title: "vCloud Director and SAML Federation"
-tags: ["VMware", "vCloud Director", "Federation"]
-date: 2016-12-12T15:28:00+10:00
+tags: ["VMware", "vCloud Director", "Federation", "ADFS", "SAML"]
+date: 2016-12-12
 draft: false
 ---
 

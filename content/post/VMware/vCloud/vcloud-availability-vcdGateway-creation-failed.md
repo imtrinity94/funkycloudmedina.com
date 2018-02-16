@@ -1,6 +1,6 @@
 ---
 title: "vCloud Availability - vCD Gateway creation failed"
-tags: ["VMware", "vCloud", "vCloud-Availability", "DRaaS"]
+tags: ["VMware", "vCloud Availability", "vCloud Director", "DRaaS"]
 date: 2018-01-23
 draft: false
 ---

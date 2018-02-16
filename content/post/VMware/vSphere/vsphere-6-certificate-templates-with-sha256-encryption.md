@@ -2,7 +2,7 @@
 title: "vSphere 6 certificate templates with SHA256 encryption"
 tags: ["VMware", "vSphere", "VCSA", "vCenter", "Certificates"]
 categories: ["vSphere"]
-date: 2017-01-10T10:00:00+10:00
+date: 2017-01-10
 draft: false
 ---
 

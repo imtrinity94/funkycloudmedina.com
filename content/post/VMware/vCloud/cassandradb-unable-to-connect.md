@@ -1,6 +1,6 @@
 ---
 title: "CassandraDB Shell - Unable to connect to any servers"
-tags: ["VMware", "vCloud", "vCloud-Availability", "CassandraDB"]
+tags: ["VMware", "vCloud Availability", "vCloud Director", "CassandraDB"]
 date: 2018-01-31
 ---
 One of the core pre-requisites for vCloud Availability for vCloud Director 2.0 is CassandraDB. This database service stores replication state and storage information and is used by the HCS (vSphere Replication Cloud Service) appliance.
