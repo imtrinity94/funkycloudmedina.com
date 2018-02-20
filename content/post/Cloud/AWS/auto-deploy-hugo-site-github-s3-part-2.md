@@ -39,7 +39,7 @@ Note: Where it says "your-s3-bucket-name-here" just put the bucket name **not** 
 7. Give your policy a name and description. Write the name down for the next step.
 8. Click **Create policy**.
 
-We've justed created an IAM policy that **allows** (the "Effect") any attached role or user to **Put** (the "Action") objects into an **S3 bucket** (the "Resource").
+We've just created an IAM policy that **allows** (the "Effect") any attached role or user to **Put** (the "Action") objects into an **S3 bucket** (the "Resource").
 
 ## Lambda IAM role
 
@@ -86,13 +86,11 @@ Let's quickly add our environment variables to the Lambda function.
 
 3. For each environment variable, enter the value that matches your deployment. For me, I had the following:
 
-```
-| Key            | Value                    |
-| -------------- | ------------------------ |
-| GITHUB_ACCOUNT | TheNewStellW             |
-| GITHUB_REPO    | funkycloudmedina.com     |
-| TARGET_BUCKET  | www.funkycloudmedina.com |
-```
+                | Key            | Value                    |
+                | -------------- | ------------------------ |
+                | GITHUB_ACCOUNT | TheNewStellW             |
+                | GITHUB_REPO    | funkycloudmedina.com     |
+                | TARGET_BUCKET  | www.funkycloudmedina.com |
 
 These environment variables will be passed into the function at execution. The reason I've done it this way is to make the function site agnostic and something other people can use.
 
@@ -110,7 +108,7 @@ My first line of thinking was "how will I clone my Git repo?". Initially I was d
 
 To summarise, "writebadcode" downloaded a **zip** of the master branch and unzipped it locally in the Lambda execution. Fantastic! I can't believe I didnt think of that. The download is done using a simple HTTP request module in Node which is a very lightweight module.
 
-Righto, what do I need to get this working? I need to install Node.js and I'll need to create a working directory for my Node.js project first. You can find Node installation steps here.
+Righto, what do I need to get this working? I need to install Node.js and I'll need to create a working directory for my Node.js project first. You can find Node installation steps [here](https://nodejs.org/en/download/).
 
 ## NPM modules
 
@@ -129,7 +127,7 @@ These modules will now be placed in a folder called "npm_modules" in your workin
 You'll need to package the compiled Hugo binary with the Lambda package. I grabbed the latest tar from the project's release page on GitHub:
 https://github.com/gohugoio/hugo/releases
 
-I downloaded and unpacked Linux 64-bit tar.gz archive into my working directory.
+I downloaded and unpacked the Linux 64-bit tar.gz archive into my working directory.
 
 ## Code block
 
@@ -145,7 +143,7 @@ Before you can upload your function you'll need to create a deployment package.
 
 ## Packaging
 
-To package your Lambda function, select all of the files **inside** your working diretory and zip them. This zip should now contain your Javascript file and the "npm_modules" folder created earlier.
+To package your Lambda function, select all of the files **inside** your working directory and zip them. This zip should now contain your Javascript file, Hugo binary and the "npm_modules" folder created earlier.
 
 ## Configuring Lambda
 
