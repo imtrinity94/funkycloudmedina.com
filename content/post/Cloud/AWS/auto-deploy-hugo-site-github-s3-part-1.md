@@ -6,6 +6,8 @@ draft: false
 ---
 This post is part of a series. You're reading Part 1.
 
++ [Auto deploy a Hugo website from GitHub to S3 - Part 2](/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/)
+
 -----
 
 # Introduction
@@ -105,6 +107,8 @@ We'll need to create an IAM user for GitHub. The GitHub service integration need
 
 GitHub will now publish a notification to the SNS topic whenever a new commit is made.
 
----
+--
 
-That's it for Part 1. Stay tuned for Part 2!
+That's it for Part 1. Part 2 is below:
+
++ [Auto deploy a Hugo website from GitHub to S3 - Part 2](/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/)
