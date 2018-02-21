@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 12 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Auto deploy a Hugo website from GitHub to S3 - Part 2</title>
+      <link>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/</link>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/</guid>
+      <description>This post is part of a series. You&amp;rsquo;re reading Part 2.
+ Auto deploy a Hugo website from GitHub to S3 - Part 1  Preparing for the AWS Lambda function Now that GitHub notifies AWS of changes, we need to create the &amp;ldquo;doing&amp;rdquo; part of our project. We&amp;rsquo;re going to use AWS&amp;rsquo; Lambda service to perform the work. Lambda will execute the function everytime a notification is published to the SNS topic.</description>
+    </item>
+    
+    <item>
+      <title>Using Docker as an adhoc NodeJS package manager</title>
+      <link>https://www.funkycloudmedina.com/2018/02/using-docker-as-an-adhoc-nodejs-package-manager/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/using-docker-as-an-adhoc-nodejs-package-manager/</guid>
+      <description>During my GitHub -&amp;gt; Lambda -&amp;gt; S3 series I needed to download and install NodeJS modules into my project&amp;rsquo;s working directory. I didn&amp;rsquo;t really want to install NodeJS and NPM on my Mac as my machine is a daily driver (SysAdmin/Ops) and not really a front or backend dev machine.
+I could always use a virtual machine but that&amp;rsquo;s too resource intensive just to download some NPM modules. What&amp;rsquo;s smaller than a VM?</description>
+    </item>
     
     <item>
       <title>Auto deploy a Hugo website from GitHub to S3 - Part 1</title>
@@ -18,8 +38,8 @@
       <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/</guid>
-      <description>This post is part 1 of a 2 part series. When I&amp;rsquo;ve written and posted the second part I&amp;rsquo;ll link to it here.
-Introduction For those who don&amp;rsquo;t know what Hugo is, it&amp;rsquo;s a static website generator. Its source material is a Hugo template with your content in Markdown. I&amp;rsquo;ve used it for a while, in fact this blog is generated using Hugo. Hugo can give you an entire site in HTML/CSS and any required Javascript that you can then place anywhere on the web.</description>
+      <description>This post is part of a series. You&amp;rsquo;re reading Part 1.
+ Auto deploy a Hugo website from GitHub to S3 - Part 2  Introduction For those who don&amp;rsquo;t know what Hugo is, it&amp;rsquo;s a static website generator. Its source material is a Hugo template with your content in Markdown. I&amp;rsquo;ve used it for a while, in fact this blog is generated using Hugo. Hugo can give you an entire site in HTML/CSS and any required Javascript that you can then place anywhere on the web.</description>
     </item>
     
     <item>
@@ -60,6 +80,16 @@ I was using the Dell Bootable Firmware Update utility available here. While the 
       
       <guid>https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/</guid>
       <description>I recently had the need to update an AWS Route53 domain NS configuration so that it could be protected by CloudFlare. This domain was purchased via Route53. I had updated the hosted zone NS records with the new Name Servers, but the domain continued to point to AWS and it drove me nuts. Turns out there is another section in Route53 where you updated the NS records for your Route53 managed domain.</description>
+    </item>
+    
+    <item>
+      <title>Studying for the VCAP6-Design DCV</title>
+      <link>https://www.funkycloudmedina.com/2017/08/studying-for-the-vcap6-design-dcv/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2017/08/studying-for-the-vcap6-design-dcv/</guid>
+      <description>Here are some of the resources that I worked through as study material for the VCAP6-Design exam. A lot of these links and the discovery of these links can be attributed to a lot of others, and I&amp;rsquo;ll try to credit them where I can.
+ vBrownBag EMEA - VCAP6-DCV Design - vBrownBag YouTube channel  Some great presenters here that highlight some of the key concepts and follow up with discussions  vThing - VCAP Study Resources - Andres Herceg&amp;rsquo;s blog https://vthing.</description>
     </item>
     
     <item>
@@ -131,7 +161,7 @@ I dug around in the vCenter MOB and found the vCloud Director extension.</descri
     <item>
       <title>vSphere 6 certificate templates with SHA256 encryption</title>
       <link>https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</link>
-      <pubDate>Tue, 10 Jan 2017 10:00:00 +1000</pubDate>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</guid>
       <description>I was just in the middle of configuring a PSC 6.0 node’s VMCA as an intermediate CA and, in traditional fashion, went to request a certificate from a Windows Server 2008 R2 Microsoft CA using the web enrollment form (as per this VMware KB article).
@@ -153,7 +183,7 @@ Turns out, you must run the vcsa_setup.</description>
     <item>
       <title>vCloud Director and SAML Federation</title>
       <link>https://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</link>
-      <pubDate>Mon, 12 Dec 2016 15:28:00 +1000</pubDate>
+      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</guid>
       <description>I had a few issues getting vCloud Director and SAML federation playing nicely. By issues, I mean there wasn’t an explicit how-to in VMware’s doco. The big issues were group-based authentication and authenticating against a user&amp;rsquo;s email address instead of their UPN.
@@ -163,21 +193,23 @@ This allowed users to login using their UPN.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>About me</title>
       <link>https://www.funkycloudmedina.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/about/</guid>
-      <description>About Me Hello, I&amp;rsquo;m Stellios. This is my blog/dumping ground for anything private and public cloud related. Almost every blog post and tutorial online is written from a green field deployment or homelab where you&amp;rsquo;re unlikely to find the really juicy problems. I try to keep it limited to fixes and how-to&amp;rsquo;s that I couldn&amp;rsquo;t find anywhere else, but sometimes the fixes that are out there are too good not to share.</description>
+      <description>Hello, I&amp;rsquo;m Stellios. This is my personal tech related blog for anything private and public cloud related. I love (almost) anything virtual and cloud.
+Almost every blog post and tutorial I seem to find online is written around a green field deployment where somehow issues or bugs are not found and you&amp;rsquo;re unlikely to find the really juicy problems. My initial goal was to to keep this blog limited to fixes and how-to&amp;rsquo;s that I couldn&amp;rsquo;t find anywhere else, but I&amp;rsquo;ve noticed that since starting the blog I&amp;rsquo;m slowly creeping into the &amp;lsquo;opinion&amp;rsquo; side of blogging.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Contact</title>
       <link>https://www.funkycloudmedina.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/contact/</guid>
-      <description>Contacting me If you have any questions about any of my posts please don&amp;rsquo;t hesitate in commenting using Disqus. If you&amp;rsquo;d like to get in contact with me casually to discuss any topics noted in this blog you can totally reach me on Twitter (check out my Twitter profile in the sidebar).
+      <description>If you have any questions about any of my posts please don&amp;rsquo;t hesitate and comment on the post.
+If you&amp;rsquo;d like to get in contact with me casually to discuss any topics noted in this blog you can totally reach me on Twitter (check out my Twitter profile in the sidebar).
 If you would like to contact me professionally feel free to jump onto my LinkedIn profile (sidebar) and get in touch.</description>
     </item>
     

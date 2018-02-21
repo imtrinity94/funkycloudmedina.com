@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 10 Jan 2017 10:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/tags/vcsa/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>vSphere 6 certificate templates with SHA256 encryption</title>
       <link>https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</link>
-      <pubDate>Tue, 10 Jan 2017 10:00:00 +1000</pubDate>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</guid>
       <description>I was just in the middle of configuring a PSC 6.0 node’s VMCA as an intermediate CA and, in traditional fashion, went to request a certificate from a Windows Server 2008 R2 Microsoft CA using the web enrollment form (as per this VMware KB article).

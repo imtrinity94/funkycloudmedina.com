@@ -12,12 +12,13 @@
     
     
     <item>
-      <title></title>
+      <title>About me</title>
       <link>https://www.funkycloudmedina.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/about/</guid>
-      <description>About Me Hello, I&amp;rsquo;m Stellios. This is my blog/dumping ground for anything private and public cloud related. Almost every blog post and tutorial online is written from a green field deployment or homelab where you&amp;rsquo;re unlikely to find the really juicy problems. I try to keep it limited to fixes and how-to&amp;rsquo;s that I couldn&amp;rsquo;t find anywhere else, but sometimes the fixes that are out there are too good not to share.</description>
+      <description>Hello, I&amp;rsquo;m Stellios. This is my personal tech related blog for anything private and public cloud related. I love (almost) anything virtual and cloud.
+Almost every blog post and tutorial I seem to find online is written around a green field deployment where somehow issues or bugs are not found and you&amp;rsquo;re unlikely to find the really juicy problems. My initial goal was to to keep this blog limited to fixes and how-to&amp;rsquo;s that I couldn&amp;rsquo;t find anywhere else, but I&amp;rsquo;ve noticed that since starting the blog I&amp;rsquo;m slowly creeping into the &amp;lsquo;opinion&amp;rsquo; side of blogging.</description>
     </item>
     
   </channel>

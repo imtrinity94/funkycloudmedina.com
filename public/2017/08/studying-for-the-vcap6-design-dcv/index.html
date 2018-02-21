@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.31.1" />
 
-  <title>vCloud Availability - vCD Gateway creation failed &middot; Funky Cloud Medina</title>
+  <title>Studying for the VCAP6-Design DCV &middot; Funky Cloud Medina</title>
 
   
   
@@ -223,7 +223,7 @@
 
 
 <div class="header">
-  <h1>vCloud Availability - vCD Gateway creation failed</h1>
+  <h1>Studying for the VCAP6-Design DCV</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -232,7 +232,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>23 January 2018</time>
+    <time>29 August 2017</time>
   </div>
 
   
@@ -247,11 +247,9 @@
     
       <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcloud-availability">vCloud Availability</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/certification">Certification</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcloud-director">vCloud Director</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/draas">DRaaS</a>
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/professional-development">Professional Development</a>
     
   </div>
   
@@ -259,85 +257,40 @@
 
 </div>
 
-  
-
-<p>After a short break over Christmas and New Year&rsquo;s I threw myself into the latest version of vCloud Availability for vCloud Director (2.0).</p>
-
-<p>The installation of vCloud Availability for vCloud Director (vCAv) is all done through an &ldquo;installer appliance&rdquo;, a CLI and a configuration file called a &lsquo;registry&rsquo;. I opted for the &lsquo;automated&rsquo; installation using a registry file and had all of my configuration and VM deployment specs in there.</p>
-
-<p>I won&rsquo;t go into detail around the deployment of vCAv as the official VMware documentation covers the bulk of it, but I did get caught up on a number of things, which resulted in many re-deployments of vCAv components. The biggest hurdle I had is this one.</p>
-
-<h1 id="symptom">Symptom</h1>
-
-<p>During deployment the vCAv installer would timeout and fail when configuring the HCS appliance. Specifically, I was getting this error from the vCAv CLI:</p>
-
-<blockquote>
-<p>&ldquo;External service &lsquo;vSphereReplication&rsquo; failed to respond in the specified timeout (10 SECONDS)&rdquo;</p>
-</blockquote>
-
-<p>My vCloud Director cells and Cloud Proxy cell were configured to the finest detail as VMware&rsquo;s docs listed, so I knew that wasn&rsquo;t the problem.</p>
-
-<p>I SSH&rsquo;d into the HCS appliance that was deployed and changed to the following directory: <code>/opt/vmware/hms/logs</code>. Here you&rsquo;ll find the HCS service logs. Mainly <code>hcs.log</code> and <code>hcs-stderrout.log</code>. It was there I found the following exception:</p>
-
-<blockquote>
-<p>Error creating bean with name &lsquo;vcdGateway&rsquo; defined in class path resource</p>
-</blockquote>
-
-<p>I&rsquo;m ashamed to admit it but I spent quite a few days flailing around in this environment trying to find out what the problem was. I thought it was the CassandraDB cluster or the RabbitMQ server. Alas, it was not.</p>
-
-<h1 id="investigation">Investigation</h1>
-
-<p>There was a log entry on either the HCS or HMS VM stating that &lsquo;hbr&rsquo; had already been registered in vCloud. The message was similar to:</p>
-
-<blockquote>
-<p>&lsquo;hbr&rsquo; extension already registered.</p>
-</blockquote>
-
-<p>Interesting! So I jump over to the vCAv documentation, specifically the &ldquo;Unregister and cleanup operations&rdquo; section for Service Providers and found <a href="https://docs.vmware.com/en/vCloud-Availability-for-vCloud-Director/2.0/com.vmware.vcavcd.install.config.doc/GUID-9247DC8A-5984-4552-B171-DCDD09AAA0B5.html">these</a>. I was hoping there may have been a stale entry from the number of deployment retries or a user that was registered to some other component that I could cleanup and get a successful deployment. I ran through both tasks (unregister vSphere Replication users and CassandraDB solution from vSphere SSO) and restarted the vCAv deployment.</p>
-
-<p>The deployment failed in the same place with the same &lsquo;hbr&rsquo; messages as above. It was here that I logged a call with VMware for assistance. They made some great recommendations:</p>
+  <p>Here are some of the resources that I worked through as study material for the VCAP6-Design exam. A lot of these links and the discovery of these links can be attributed to a lot of others, and I&rsquo;ll try to credit them where I can.</p>
 
 <ul>
-<li>Check each component has appropriate comms to other components</li>
-<li>Delete all vCD and HCS objects (queues, exchanges etc) from RabbitMQ. This was doable in my situation as it was a test environment. <strong>Not recommended for production</strong>.</li>
+<li><a href="https://www.youtube.com/watch?v=bh1035s4V7s&amp;list=PLYt3WRI29sdYQD2DMhBNTgQrjNtA3XqTg">vBrownBag EMEA - VCAP6-DCV Design</a> - vBrownBag YouTube channel
+
+<ul>
+<li>Some great presenters here that highlight some of the key concepts and follow up with discussions</li>
+</ul></li>
+<li><a href="https://vthing.wordpress.com/2016/03/21/vcap6-dcv-design-study-resources/">vThing - VCAP Study Resources</a> - Andres Herceg&rsquo;s blog <a href="https://vthing.wordpress.com">https://vthing.wordpress.com</a>
+
+<ul>
+<li>Andres has done a great job collecting VCAP links. This is probably one of the best sources for further study links.</li>
+</ul></li>
+<li><a href="http://www.elasticsky.co.uk/vcdx_defense_design_scenario/">ElasticSky - Preparing for the VCDX</a> - Paul McSharry&rsquo;s blog
+
+<ul>
+<li>Paul McSharry does a great job breaking down VCDX process and gives you an insight into how the VCDX panel, and by extension VMware, think about design.</li>
+</ul></li>
 </ul>
 
-<p>These suggestions didn&rsquo;t fix my issue but were better than I could come up with. Until&hellip;</p>
-
-<h1 id="resolution">Resolution</h1>
-
-<p>I checked the help from the <strong>vcav</strong> utility on the vCAv installer appliance (vcav &ndash;help). There is a command you can run that will unregister the HCS extension from vCloud Director. This is different to the unregister commands listed above. I was hesitant but had nothing to lose. With my failed deployment still there (vCAv component VMs still running and half configured) I ran the following commands on the vCAv installer appliance:</p>
-
-<pre><code>vcav vcd remove-vr-user --vcd={vcd-registry-name} --all --debug
-vcav hcs unregister-cassandra --vcd={vcd-registry-name} --hcs-address={hcs-appliance-ip} --all --debug
-vcav hcs unregister-extension --vcd={registry-name-for-vcd} --hcs-address={hcs-appliance-ip} --all --debug
-</code></pre>
-
-<p>I like to use the <code>--debug</code> switch on the vCAv tool so I can see what&rsquo;s going on. What we&rsquo;re doing here is removing the vSphere replication solution users from vCloud Director (the same ones that are imported from vSphere SSO). Then, remove the CassandraDB solution from vCD and HCS. Finally, the step that solved all of my problems, remove the HCS extension from vCloud Director. I&rsquo;ve done this a number of times and this order is what worked for me.</p>
-
-<p>The commands take a few nail-biting seconds to complete. Once they&rsquo;re all complete I kicked off the vCAv deployment again with the <code>--overwrite</code> and <code>--reconfigure</code> switches:</p>
-
-<pre><code>vcav prevalidate --overwrite --reconfigure --unregister-hms-extension --debug
-</code></pre>
-
-<p>In about 20 minutes I saw the sweetest result code I had ever seen: <code>RC: 0</code> telling me that the entire deployment was successful.</p>
-
-<p>As to why this happens, I&rsquo;m not sure. It&rsquo;s possible that HCS registers as an extension but fails to validate or perform some follow up task with vCD leaving the registration incomplete and a stale registration behind.</p>
-
-<p>Good luck!</p>
+<p>More will be added as I dig them up.</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://www.funkycloudmedina.com/2017/09/dell-bootable-firmware-update-iso---apply_updates.sh-is-invalid/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://www.funkycloudmedina.com/2017/09/dell-bootable-firmware-update-iso---apply_updates.sh-is-invalid/">Dell Bootable Firmware Update ISO - apply_updates.sh is invalid</a>
+      <a href="https://www.funkycloudmedina.com/2017/07/vcap6-dcv-design-certification-achieved/">VCAP6-DCV Design certification achieved!</a>
     </nav>
     
   </div>
@@ -347,13 +300,13 @@ vcav hcs unregister-extension --vcd={registry-name-for-vcd} --hcs-address={hcs-a
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/">CassandraDB Shell - Unable to connect to any servers</a>
+      <a href="https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/">Updating a Route53 domain&#39;s Name Servers</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

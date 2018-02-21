@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/</loc>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/2018/02/using-docker-as-an-adhoc-nodejs-package-manager/</loc>
+    <lastmod>2018-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/</loc>
     <lastmod>2018-02-12T00:00:00+00:00</lastmod>
   </url>
@@ -25,6 +35,11 @@
   <url>
     <loc>https://www.funkycloudmedina.com/2017/09/updating-a-route53-domains-name-servers/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/2017/08/studying-for-the-vcap6-design-dcv/</loc>
+    <lastmod>2017-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -59,7 +74,7 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/2017/01/vsphere-6-certificate-templates-with-sha256-encryption/</loc>
-    <lastmod>2017-01-10T10:00:00+10:00</lastmod>
+    <lastmod>2017-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -69,7 +84,7 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</loc>
-    <lastmod>2016-12-12T15:28:00+10:00</lastmod>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -77,23 +92,25 @@
   </url>
   
   <url>
-    <loc>https://www.funkycloudmedina.com/contact/</loc>
+    <loc>https://www.funkycloudmedina.com/about/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.funkycloudmedina.com/about/</loc>
+    <loc>https://www.funkycloudmedina.com/tags/adfs/</loc>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/aws/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/blog/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,8 +128,12 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/certification/</loc>
-    <lastmod>2017-07-12T08:35:00+10:00</lastmod>
+    <lastmod>2017-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/contact/</loc>
   </url>
   
   <url>
@@ -133,6 +154,12 @@
   </url>
   
   <url>
+    <loc>https://www.funkycloudmedina.com/tags/docker/</loc>
+    <lastmod>2018-02-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/tags/draas/</loc>
     <lastmod>2018-01-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -140,7 +167,7 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/federation/</loc>
-    <lastmod>2016-12-12T15:28:00+10:00</lastmod>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -152,13 +179,13 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/github/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -170,25 +197,31 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/hugo/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/lambda/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/nodejs/</loc>
+    <lastmod>2018-02-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/post/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/professional-development/</loc>
-    <lastmod>2017-07-12T08:35:00+10:00</lastmod>
+    <lastmod>2017-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -206,13 +239,19 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/s3/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/saml/</loc>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/</loc>
-    <lastmod>2018-02-12T00:00:00+00:00</lastmod>
+    <lastmod>2016-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -228,12 +267,6 @@
   </url>
   
   <url>
-    <loc>https://www.funkycloudmedina.com/tags/vcloud/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.funkycloudmedina.com/tags/vcloud-availability/</loc>
     <lastmod>2018-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -241,13 +274,13 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/vcloud-director/</loc>
-    <lastmod>2017-07-07T17:43:00+10:00</lastmod>
+    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/vcsa/</loc>
-    <lastmod>2017-01-10T10:00:00+10:00</lastmod>
+    <lastmod>2017-01-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

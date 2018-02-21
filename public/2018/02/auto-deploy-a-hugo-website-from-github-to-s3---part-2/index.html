@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.31.1" />
+
+  <title>Auto deploy a Hugo website from GitHub to S3 - Part 2 &middot; Funky Cloud Medina</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://www.funkycloudmedina.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://www.funkycloudmedina.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://www.funkycloudmedina.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://www.funkycloudmedina.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="https://www.funkycloudmedina.com/css/my.css">
+  
+  
+    <script src="https://www.funkycloudmedina.com/js/my.js"></script>
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://www.funkycloudmedina.com/">TheNewStellW</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.funkycloudmedina.com/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.funkycloudmedina.com/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.funkycloudmedina.com/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://www.funkycloudmedina.com/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+  
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/@TheNewStellW" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/stellios-williams-2762153b" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/TheNewStellW" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+  
+  <div class="pure-menu social">
+    <ul class="pure-menu-list">
+        
+        <a href="https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&ui=www_cert" target="_blank"><img src=/logos/vcix6-dcv-design.png></a>
+
+        
+        <a href="https://www.microsoft.com/en-sa/learning/mcse-cloud-platform-infrastructure.aspx" target="_blank"><img src=/logos/mcse-cloud-white.png></a>
+</ul>
+</div>
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016-2017. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Auto deploy a Hugo website from GitHub to S3 - Part 2</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>20 February 2018</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/aws">AWS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/hugo">Hugo</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/github">GitHub</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/lambda">Lambda</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/s3">S3</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/blog">Blog</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<p>This post is part of a series. You&rsquo;re reading Part 2.</p>
+
+<ul>
+<li><a href="https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/">Auto deploy a Hugo website from GitHub to S3 - Part 1</a></li>
+</ul>
+
+<hr />
+
+<h1 id="preparing-for-the-aws-lambda-function">Preparing for the AWS Lambda function</h1>
+
+<p>Now that GitHub notifies AWS of changes, we need to create the &ldquo;doing&rdquo; part of our project. We&rsquo;re going to use AWS&rsquo; Lambda service to perform the work. Lambda will execute the function everytime a notification is published to the SNS topic.</p>
+
+<p>Lambda will need an IAM role with an attached policy to perform actions against a target S3 bucket. Let&rsquo;s start by creating the IAM policy.</p>
+
+<h2 id="lambda-iam-policy">Lambda IAM policy</h2>
+
+<ol>
+<li>In the AWS console open the IAM dashboard.</li>
+<li>Click <strong>Policies</strong> on the left.</li>
+<li>Click <strong>Create policy</strong> along the top.</li>
+<li>In the policy editor, select the <strong>JSON</strong> tab.</li>
+
+<li><p>Enter the following for the new policy:</p>
+
+<pre><code>{
+    &quot;Version&quot;: &quot;2012-10-17&quot;,
+    &quot;Statement&quot;: [
+        {
+            &quot;Sid&quot;: &quot;VisualEditor0&quot;,
+            &quot;Effect&quot;: &quot;Allow&quot;,
+            &quot;Action&quot;: &quot;s3:PutObject&quot;,
+            &quot;Resource&quot;: &quot;arn:aws:s3:::{your-s3-bucket-name-here}/*&quot;
+        }
+    ]
+}
+</code></pre>
+
+<p>Note: Where it says &ldquo;your-s3-bucket-name-here&rdquo; just put the bucket name <strong>not</strong> the bucket URL.</p></li>
+
+<li><p>Click <strong>Review policy</strong>.</p></li>
+
+<li><p>Give your policy a name and description. Write the name down for the next step.</p></li>
+
+<li><p>Click <strong>Create policy</strong>.</p></li>
+</ol>
+
+<p>We&rsquo;ve just created an IAM policy that <strong>allows</strong> (the &ldquo;Effect&rdquo;) any attached role or user to <strong>Put</strong> (the &ldquo;Action&rdquo;) objects into an <strong>S3 bucket</strong> (the &ldquo;Resource&rdquo;).</p>
+
+<h2 id="lambda-iam-role">Lambda IAM role</h2>
+
+<p>An AWS IAM role is effectively an identity that each AWS service can assume in order to perform work in the AWS ecosystem. You can read more about IAM roles <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html">here</a>.</p>
+
+<p>For our requirements, we&rsquo;ll create an IAM role for a specific Lambda function.</p>
+
+<ol>
+<li>In the AWS console open the IAM dashboard.</li>
+<li>Click <strong>Roles</strong> on the left.</li>
+<li>Click <strong>Create role</strong> along the top.</li>
+<li>Leave the <strong>AWS Service</strong> entity selected, and click on <strong>Lambda</strong> underneath it.</li>
+<li>Click <strong>Next: Permissions</strong>.</li>
+<li>Search and select the IAM policy you created in the previous step.</li>
+<li>Search for and select the <strong>AWSLambdaBasicExecutionRole</strong> policy.</li>
+<li>Select the checkbox next to the policy and click <strong>Next: Review</strong>.</li>
+<li>Give the role a name and description. Write the name down for the next step.</li>
+<li>Click <strong>Create Role</strong>.</li>
+</ol>
+
+<p>We&rsquo;ve now created an IAM role that has the ability to put objects on S3 and by selecting the <strong>AWSLambdaBasicExecutionRole</strong> policy, we can also write logs to CloudWatch to monitor our Lambda executions.</p>
+
+<h1 id="create-the-lambda-function">Create the Lambda function</h1>
+
+<p>Now we can actually create the function.</p>
+
+<ol>
+<li>In the AWS console open the Lambda dashboard.</li>
+<li>Click the <strong>Create function</strong> button.</li>
+<li>Leave the <strong>Author from scratch</strong> option selected, and begin filling out the fields:
+
+<ol>
+<li><strong>Name</strong> is whatever name you want to give the Lambda function.</li>
+<li>Set <strong>Runtime</strong> to <strong>Node.js 6.10</strong>.</li>
+<li>In the <strong>Role</strong> dropdown, select the <strong>Choose an existing role</strong>.</li>
+<li>In the <strong>Existing role</strong> dropdwon, select the role you created in the previous step.</li>
+</ol></li>
+<li>Click the <strong>Create function</strong> button.</li>
+</ol>
+
+<p>You&rsquo;ll now be presented with the Lambda function designer. This is where we will define the triggers for the function&rsquo;s execution, environment variables that will be passed in and the code that will be executed. Unfortunately, we have no lambda packages to upload or code to write&hellip;yet.</p>
+
+<p>Let&rsquo;s quickly add our environment variables to the Lambda function.</p>
+
+<ol>
+<li>In the function editor, scroll down to the <strong>Environment variables</strong> section.</li>
+
+<li><p>Enter new environment variables with the following key names:</p>
+
+<pre><code>        GITHUB_ACCOUNT
+        GITHUB_REPO
+        TARGET_BUCKET
+</code></pre></li>
+
+<li><p>For each environment variable, enter the value that matches your deployment. For me, I had the following:</p>
+
+<pre><code>        | Key            | Value                    |
+        | -------------- | ------------------------ |
+        | GITHUB_ACCOUNT | TheNewStellW             |
+        | GITHUB_REPO    | funkycloudmedina.com     |
+        | TARGET_BUCKET  | www.funkycloudmedina.com |
+</code></pre></li>
+</ol>
+
+<p>These environment variables will be passed into the function at execution. The reason I&rsquo;ve done it this way is to make the function site agnostic and something other people can use.</p>
+
+<h1 id="code">Code</h1>
+
+<p>Initially I thought it was going to be easier writing this function in Python but I quickly realised that was going to take longer than it needed. I already had an understanding of Javascript thanks to vRealize Orchestrator. How hard could Node.js be? ;)</p>
+
+<p>So, I needed the function to do a few things in one execution:</p>
+
+<ol>
+<li>Clone the latest copy of the &lsquo;master&rsquo; branch from my blog&rsquo;s GitHub repo.</li>
+<li>Run Hugo against the source and generate the website files.</li>
+<li>Copy all generated files and directories to my S3 bucket.</li>
+</ol>
+
+<p>My first line of thinking was &ldquo;how will I clone my Git repo?&rdquo;. Initially I was digging online to find a way to execute &ldquo;git pull&rdquo; or &ldquo;git clone&rdquo; in a Node.js environment within Lambda. I started digging for Git modules for Node.js but couldn&rsquo;t find anything that was a reasonable size for a deployment package (node-git was OK, but it and its dependencies were too large). I dug around for a bit and found <a href="http://writebadcode.com/post/hugo-blogging-about-hugo/">this blog post</a> by &ldquo;writebadcode&rdquo; (apologies, I can&rsquo;t find his/her name or online handle). In it, he/she covers the same roadblocks I had and managed to work through them. I recommend having a read!</p>
+
+<p>To summarise, &ldquo;writebadcode&rdquo; downloaded a <strong>zip</strong> of the master branch and unzipped it locally in the Lambda execution. Fantastic! I can&rsquo;t believe I didnt think of that. The download is done using a simple HTTP request module in Node which is a very lightweight module.</p>
+
+<p>Righto, what do I need to get this working? I need to install Node.js and I&rsquo;ll need to create a working directory for my Node.js project first. You can find Node installation steps <a href="https://nodejs.org/en/download/">here</a>.</p>
+
+<h2 id="npm-modules">NPM modules</h2>
+
+<p>Once your project directory has been created, open your terminal and change to your project directory. Install the following NPM modules using <strong>npm install {module-name}</strong>:</p>
+
+<ul>
+<li>request</li>
+<li>fs</li>
+<li>path</li>
+<li>child_process</li>
+<li>mime</li>
+</ul>
+
+<p>These modules will now be placed in a folder called &ldquo;npm_modules&rdquo; in your working directory. If you want to know how I did it with relative ease, check out <a href="https://www.funkycloudmedina.com/2018/02/using-docker-as-an-adhoc-nodejs-package-manager/">my post on a containerised NPM installer</a>.</p>
+
+<h2 id="hugo-binary">Hugo binary</h2>
+
+<p>You&rsquo;ll need to package the compiled Hugo binary with the Lambda package. I grabbed the latest tar from the project&rsquo;s release page on GitHub:
+<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></p>
+
+<p>I downloaded and unpacked the Linux 64-bit tar.gz archive into my working directory.</p>
+
+<h2 id="code-block">Code block</h2>
+
+<p>I&rsquo;ve dumped my Javascript file into a GitHub gist below:</p>
+
+<script src="https://gist.github.com/TheNewStellW/289525ff7c6be217657429b871e0b38a.js"></script>
+
+<p>For the record I claim no ownership over any of this code. 99% of it was lifted from &ldquo;writebadcode&rdquo; but there were some mime module methods that needed a fix up, along with the addition of environment variables instead of hard coded bucket and repo. Whatever I&rsquo;ve added is free for use and modification.</p>
+
+<h1 id="uploading">Uploading</h1>
+
+<p>Before you can upload your function you&rsquo;ll need to create a deployment package.</p>
+
+<h2 id="packaging">Packaging</h2>
+
+<p>To package your Lambda function, select all of the files <strong>inside</strong> your working directory and zip them. This zip should now contain your Javascript file, Hugo binary and the &ldquo;npm_modules&rdquo; folder created earlier.</p>
+
+<h2 id="configuring-lambda">Configuring Lambda</h2>
+
+<p>Back in the Lambda console for your function it&rsquo;s time to upload your package and configure Lambda to execute it.</p>
+
+<ol>
+<li>Scroll down to the <strong>Function code</strong> section of the Lambda function editor.</li>
+<li>Select <strong>Upload a .ZIP file</strong> from the <strong>Code entry type</strong> drop down box.</li>
+<li>Use the Upload button that appears to select your new ZIP file.</li>
+<li>In the <strong>Handler</strong> text box, you&rsquo;ll need to specify the name of the function inside the Javascript file that needs to be executed. AWS expects it to be {file-name}.{function-name}. The file name should not have the file extension.</li>
+<li>Save the Function. You&rsquo;re now ready to test!</li>
+</ol>
+
+<h2 id="testing-lambda">Testing Lambda</h2>
+
+<p>Click the <strong>Test</strong> button at the top of the Function editor. You&rsquo;ll probably need to create a &ldquo;Test Event&rdquo;. A Test Event is a collection of variables that are fed into the function during a test execution. It&rsquo;s perfect if you have a function that takes input, performs a task and returns a value. In this scenario we don&rsquo;t require an input but we can&rsquo;t test without a Test Event. So just create it with fake values and a boring name like &ldquo;Test Event&rdquo;.</p>
+
+<p>Monitor the output at the top of the function page. Hopefully you get a success message! If the function did not execute in the expected time of 10 or 15 seconds, feel free to increase the timeout value to 60 seconds or more. This depends on the size of the Hugo site you are generating and uploading to S3.</p>
+
+<h1 id="review">Review</h1>
+
+<p>You should now have an end to end workflow to automatically deploy your Hugo website from GitHub to S3 using Lambda. If you have any questions or suggestions please feel free to leave a comment or reach out to me on Twitter.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://www.funkycloudmedina.com/2018/02/using-docker-as-an-adhoc-nodejs-package-manager/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://www.funkycloudmedina.com/2018/02/using-docker-as-an-adhoc-nodejs-package-manager/">Using Docker as an adhoc NodeJS package manager</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'funkycloudmedina';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://www.funkycloudmedina.com/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105790822-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

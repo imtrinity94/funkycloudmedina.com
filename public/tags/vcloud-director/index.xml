@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 07 Jul 2017 17:43:00 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/tags/vcloud-director/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CassandraDB Shell - Unable to connect to any servers</title>
+      <link>https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/01/cassandradb-shell---unable-to-connect-to-any-servers/</guid>
+      <description>One of the core pre-requisites for vCloud Availability for vCloud Director 2.0 is CassandraDB. This database service stores replication state and storage information and is used by the HCS (vSphere Replication Cloud Service) appliance.
+As part of my strained vCloud Availability deployment I needed to build a simple CassandraDB server. VMware Docs and the vCloud Architecture blog have some great information to get you started:
+ vCloud Architecture blog - Deploying CassandraDB VMware Docs - vCloud Availability for vCloud Director Installation Guide  Symptom I built the CassandraDB server as described in the blog post and Docs pages above, but when I would try to connect to the database using the Cassandra shell (cqlsh {ip-address} 9042) I would get the following error:</description>
+    </item>
+    
+    <item>
+      <title>vCloud Availability - vCD Gateway creation failed</title>
+      <link>https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/01/vcloud-availability---vcd-gateway-creation-failed/</guid>
+      <description>After a short break over Christmas and New Year&amp;rsquo;s I threw myself into the latest version of vCloud Availability for vCloud Director (2.0).
+The installation of vCloud Availability for vCloud Director (vCAv) is all done through an &amp;ldquo;installer appliance&amp;rdquo;, a CLI and a configuration file called a &amp;lsquo;registry&amp;rsquo;. I opted for the &amp;lsquo;automated&amp;rsquo; installation using a registry file and had all of my configuration and VM deployment specs in there.</description>
+    </item>
     
     <item>
       <title>CA-signed vCloud Director certificates no longer trusted – SAN missing</title>
@@ -47,7 +68,7 @@ I dug around in the vCenter MOB and found the vCloud Director extension.</descri
     <item>
       <title>vCloud Director and SAML Federation</title>
       <link>https://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</link>
-      <pubDate>Mon, 12 Dec 2016 15:28:00 +1000</pubDate>
+      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/2016/12/vcloud-director-and-saml-federation/</guid>
       <description>I had a few issues getting vCloud Director and SAML federation playing nicely. By issues, I mean there wasn’t an explicit how-to in VMware’s doco. The big issues were group-based authentication and authenticating against a user&amp;rsquo;s email address instead of their UPN.

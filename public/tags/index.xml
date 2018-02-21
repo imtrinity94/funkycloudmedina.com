@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 12 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Dec 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Adfs</title>
+      <link>https://www.funkycloudmedina.com/tags/adfs/</link>
+      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/adfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Aws</title>
       <link>https://www.funkycloudmedina.com/tags/aws/</link>
-      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/aws/</guid>
       <description></description>
@@ -24,7 +33,7 @@
     <item>
       <title>Blog</title>
       <link>https://www.funkycloudmedina.com/tags/blog/</link>
-      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/blog/</guid>
       <description></description>
@@ -51,7 +60,7 @@
     <item>
       <title>Certification</title>
       <link>https://www.funkycloudmedina.com/tags/certification/</link>
-      <pubDate>Wed, 12 Jul 2017 08:35:00 +1000</pubDate>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/certification/</guid>
       <description></description>
@@ -76,6 +85,15 @@
     </item>
     
     <item>
+      <title>Docker</title>
+      <link>https://www.funkycloudmedina.com/tags/docker/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Draas</title>
       <link>https://www.funkycloudmedina.com/tags/draas/</link>
       <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
@@ -87,7 +105,7 @@
     <item>
       <title>Federation</title>
       <link>https://www.funkycloudmedina.com/tags/federation/</link>
-      <pubDate>Mon, 12 Dec 2016 15:28:00 +1000</pubDate>
+      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/federation/</guid>
       <description></description>
@@ -105,7 +123,7 @@
     <item>
       <title>Github</title>
       <link>https://www.funkycloudmedina.com/tags/github/</link>
-      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/github/</guid>
       <description></description>
@@ -123,7 +141,7 @@
     <item>
       <title>Hugo</title>
       <link>https://www.funkycloudmedina.com/tags/hugo/</link>
-      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/hugo/</guid>
       <description></description>
@@ -132,16 +150,25 @@
     <item>
       <title>Lambda</title>
       <link>https://www.funkycloudmedina.com/tags/lambda/</link>
-      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/lambda/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Nodejs</title>
+      <link>https://www.funkycloudmedina.com/tags/nodejs/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Professional Development</title>
       <link>https://www.funkycloudmedina.com/tags/professional-development/</link>
-      <pubDate>Wed, 12 Jul 2017 08:35:00 +1000</pubDate>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/professional-development/</guid>
       <description></description>
@@ -168,9 +195,18 @@
     <item>
       <title>S3</title>
       <link>https://www.funkycloudmedina.com/tags/s3/</link>
-      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Saml</title>
+      <link>https://www.funkycloudmedina.com/tags/saml/</link>
+      <pubDate>Mon, 12 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/saml/</guid>
       <description></description>
     </item>
     
@@ -180,15 +216,6 @@
       <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/vcenter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vcloud</title>
-      <link>https://www.funkycloudmedina.com/tags/vcloud/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.funkycloudmedina.com/tags/vcloud/</guid>
       <description></description>
     </item>
     
@@ -204,7 +231,7 @@
     <item>
       <title>Vcloud Director</title>
       <link>https://www.funkycloudmedina.com/tags/vcloud-director/</link>
-      <pubDate>Fri, 07 Jul 2017 17:43:00 +1000</pubDate>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/vcloud-director/</guid>
       <description></description>
@@ -213,7 +240,7 @@
     <item>
       <title>Vcsa</title>
       <link>https://www.funkycloudmedina.com/tags/vcsa/</link>
-      <pubDate>Tue, 10 Jan 2017 10:00:00 +1000</pubDate>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/vcsa/</guid>
       <description></description>

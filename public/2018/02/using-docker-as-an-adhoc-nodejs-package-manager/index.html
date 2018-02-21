@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.31.1" />
 
-  <title>VCAP6-DCV Design certification achieved! &middot; Funky Cloud Medina</title>
+  <title>Using Docker as an adhoc NodeJS package manager &middot; Funky Cloud Medina</title>
 
   
   
@@ -223,7 +223,7 @@
 
 
 <div class="header">
-  <h1>VCAP6-DCV Design certification achieved!</h1>
+  <h1>Using Docker as an adhoc NodeJS package manager</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -232,7 +232,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>12 July 2017</time>
+    <time>16 February 2018</time>
   </div>
 
   
@@ -245,11 +245,13 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/aws">AWS</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/certification">Certification</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/lambda">Lambda</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/professional-development">Professional Development</a>
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/docker">Docker</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/nodejs">NodeJS</a>
     
   </div>
   
@@ -257,47 +259,40 @@
 
 </div>
 
-  <p>After months of studying and a Design and Deploy course for good measure, I passed the incredible VCAP6-DCV Design exam!</p>
+  <p>During my <a href="https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/">GitHub -&gt; Lambda -&gt; S3 series</a> I needed to download and install NodeJS modules into my project&rsquo;s working directory. I didn&rsquo;t really want to install NodeJS and NPM on my Mac as my machine is a daily driver (SysAdmin/Ops) and not really a front or backend dev machine.</p>
 
+<p>I could always use a virtual machine but that&rsquo;s too resource intensive just to download some NPM modules. What&rsquo;s smaller than a VM?</p>
 
+<hr />
 
-<div class="pure-g">
+<p>Containers! They&rsquo;re neat little things and I love looking for a good reason to use them. For my use case, I needed to run a container that could install the NodeJS and NPM binaries, install some NPM modules to a mounted directory and then stop the container.</p>
 
-  
-  
-  
-  
-  <div class="pure-u-1-1">
-    <div style="padding: 0 .2em">
-      <img
-        class="pure-img-responsive"
-        src="https://www.funkycloudmedina.com/images/vmware-logo-vcap6-dcv-design.png"
-        alt="">
-    </div>
-  </div>
-  
+<p>On my Mac I had a Lambda package working directory - a normal folder where my JavaScript file and node modules were going to live. With Docker already installed and running, I started an interactive ubuntu container and mounted my project&rsquo;s directory into a directory in the container called &ldquo;working&rdquo;:</p>
 
-</div>
+<pre><code class="language-bash">docker run -v /Users/stell/Projects/hugo-site-deployer/node:/working -it ubuntu
+</code></pre>
 
+<p>From the container terminal I was able to install NodeJS and NPM:</p>
 
-<p>This certification in combination with my VCAP5-DCA from 18 months ago has awarded me the VCIX6 title which I&rsquo;m incredibly proud of. Here&rsquo;s the official link from VMware about the certification: <a href="https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&amp;ui=www_cert">https://mylearn.vmware.com/mgrReg/plan.cfm?plan=89125&amp;ui=www_cert</a></p>
+<pre><code class="language-bash">sudo apt-get install nodejs &amp;&amp; sudo apt-get install npm
+</code></pre>
 
-<p>To give you an idea of what the Design exam is about, take a look at <a href="www.virtualtiers.net">www.virtualtiers.net</a>. That exam simulator is a great representation of how the exam is formatted and how you&rsquo;re tested. The content isn&rsquo;t the same as the exam for obvious reasons, but it helps.</p>
+<p>After changing to the /working directory and installing a few npm modules (npm install) I had a folder with all of my required modules without touching my main OS. As I&rsquo;ve written in my auto deployment series you can then zip the contents of your working folder and send it to Lambda.</p>
 
-<p>I&rsquo;ll be doing a quick post sometime soon on all the resources I&rsquo;ve collected during my preparation.</p>
+<p>You could use this process for almost anything that allows stateless modules to be stored in a folder and moved around (I&rsquo;m pretty sure Python supports a similar method).</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/">CA-signed vCloud Director certificates no longer trusted – SAN missing</a>
+      <a href="https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/">Auto deploy a Hugo website from GitHub to S3 - Part 1</a>
     </nav>
     
   </div>
@@ -307,13 +302,13 @@
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://www.funkycloudmedina.com/2017/08/studying-for-the-vcap6-design-dcv/">Studying for the VCAP6-Design DCV</a>
+      <a href="https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/">Auto deploy a Hugo website from GitHub to S3 - Part 2</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://www.funkycloudmedina.com/2017/08/studying-for-the-vcap6-design-dcv/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

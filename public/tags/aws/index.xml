@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 12 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Auto deploy a Hugo website from GitHub to S3 - Part 2</title>
+      <link>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/</link>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/</guid>
+      <description>This post is part of a series. You&amp;rsquo;re reading Part 2.
+ Auto deploy a Hugo website from GitHub to S3 - Part 1  Preparing for the AWS Lambda function Now that GitHub notifies AWS of changes, we need to create the &amp;ldquo;doing&amp;rdquo; part of our project. We&amp;rsquo;re going to use AWS&amp;rsquo; Lambda service to perform the work. Lambda will execute the function everytime a notification is published to the SNS topic.</description>
+    </item>
+    
+    <item>
+      <title>Using Docker as an adhoc NodeJS package manager</title>
+      <link>https://www.funkycloudmedina.com/2018/02/using-docker-as-an-adhoc-nodejs-package-manager/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/using-docker-as-an-adhoc-nodejs-package-manager/</guid>
+      <description>During my GitHub -&amp;gt; Lambda -&amp;gt; S3 series I needed to download and install NodeJS modules into my project&amp;rsquo;s working directory. I didn&amp;rsquo;t really want to install NodeJS and NPM on my Mac as my machine is a daily driver (SysAdmin/Ops) and not really a front or backend dev machine.
+I could always use a virtual machine but that&amp;rsquo;s too resource intensive just to download some NPM modules. What&amp;rsquo;s smaller than a VM?</description>
+    </item>
     
     <item>
       <title>Auto deploy a Hugo website from GitHub to S3 - Part 1</title>
@@ -18,8 +38,8 @@
       <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/</guid>
-      <description>This post is part 1 of a 2 part series. When I&amp;rsquo;ve written and posted the second part I&amp;rsquo;ll link to it here.
-Introduction For those who don&amp;rsquo;t know what Hugo is, it&amp;rsquo;s a static website generator. Its source material is a Hugo template with your content in Markdown. I&amp;rsquo;ve used it for a while, in fact this blog is generated using Hugo. Hugo can give you an entire site in HTML/CSS and any required Javascript that you can then place anywhere on the web.</description>
+      <description>This post is part of a series. You&amp;rsquo;re reading Part 1.
+ Auto deploy a Hugo website from GitHub to S3 - Part 2  Introduction For those who don&amp;rsquo;t know what Hugo is, it&amp;rsquo;s a static website generator. Its source material is a Hugo template with your content in Markdown. I&amp;rsquo;ve used it for a while, in fact this blog is generated using Hugo. Hugo can give you an entire site in HTML/CSS and any required Javascript that you can then place anywhere on the web.</description>
     </item>
     
     <item>
