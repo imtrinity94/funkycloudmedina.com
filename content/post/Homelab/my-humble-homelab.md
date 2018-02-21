@@ -2,12 +2,13 @@
 title: "My humble homelab"
 tags: ["Professional Development", "Homelab"]
 date: 2018-02-22
+draft: false
 ---
 Like many professionals in this industry, I have a homelab. Who would need a homelab anymore with the cloud as prevalent as it is? Well, someone who specialises in private on-premises clouds and the work required to make it a hybrid cloud. And to be honest, I love it. I get to build something that is truly mine with my own constraints and requirements and still try to reach maximum usefulness for the hardware.
 
 I haven't got much for my homelab, but it gets me by enough to study for exams or learn something new. Hell, it's great just to play with beta products or suites I don't use day to day at work.
 
-Eventually I'd like to turn my homelab into a production house-serving centre that can offer files, services and automation for everyone. 
+Eventually I'd like to turn my homelab into a production house-serving centre that can offer files, services and automation for everyone.
 
 I'm hoping to blog about my future homelab work and any additions that I make. Consider it practice for design and as-built documents ;)
 
