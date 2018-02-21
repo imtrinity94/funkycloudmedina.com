@@ -2,6 +2,7 @@
 title: "Auto deploy a Hugo website from GitHub to S3 - Part 2"
 tags: ["AWS", "Hugo", "GitHub", "Lambda", "S3", "Blog"]
 date: 2018-02-20
+draft: false
 ---
 This post is part of a series. You're reading Part 2.
 
