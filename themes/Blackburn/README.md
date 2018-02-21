@@ -4,7 +4,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 
 ## Overview
 
-* Based on Yahoo's [Pure CSS] (http://purecss.io/) (v1.0.0)
+* Based on Yahoo's [Pure CSS](http://purecss.io/) (v1.0.0)
 * Fixed sidebar with social links:
   * Twitter
   * GNU social
@@ -94,30 +94,34 @@ paginate = 10
   custom_css = ["css/my.css"]
   custom_js = ["js/my.js"]
 
+  [params.piwikAnalytics]
+    siteid = 2
+    piwikroot = "//analytics.example.com/"
+
 [menu]
   # Shown in the side menu.
   [[menu.main]]
     name = "Home"
     pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 0
+    weight = 1
     identifier = "home"
     url = "/"
   [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 1
+    weight = 2
     identifier = "post"
     url = "/post/"
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 2
+    weight = 3
     identifier = "about"
     url = "/about/"
   [[menu.main]]
     name = "Contact"
     pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 3
+    weight = 4
     url = "/contact/"
 
 [social]
@@ -198,6 +202,19 @@ paginate = 10
 ```
 
 ## Shortcodes
+
+### pure_table
+```
+{{< pure_table
+  "columnName1|columnName2|...|columnName99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "dataValue1|dataValue2|...|dataValue99"
+  "... and so on"
+>}}
+```
+
+where each positional parameter is separated by the vertical bar (i.e., |). The resulting `<table>` is set to have `class="pure-table pure-table-striped"`.
 
 ### fluid_imgs
 
