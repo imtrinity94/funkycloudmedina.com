@@ -1,7 +1,7 @@
 baseURL = "https://www.funkycloudmedina.com/"
 languageCode = "en-us"
 title = "Funky Cloud Medina"
-theme = "Blackburn"
+theme = "blackburn"
 
 author = "Stellios Williams"
 # Shown in the side menu
