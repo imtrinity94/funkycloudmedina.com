@@ -139,11 +139,47 @@
     </item>
     
     <item>
+      <title>Homelab</title>
+      <link>https://www.funkycloudmedina.com/tags/homelab/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/homelab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hp</title>
+      <link>https://www.funkycloudmedina.com/tags/hp/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/hp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hp Oo</title>
+      <link>https://www.funkycloudmedina.com/tags/hp-oo/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/hp-oo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>https://www.funkycloudmedina.com/tags/hugo/</link>
       <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json</title>
+      <link>https://www.funkycloudmedina.com/tags/json/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/json/</guid>
       <description></description>
     </item>
     
@@ -168,7 +204,7 @@
     <item>
       <title>Professional Development</title>
       <link>https://www.funkycloudmedina.com/tags/professional-development/</link>
-      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/professional-development/</guid>
       <description></description>
@@ -180,6 +216,15 @@
       <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/psc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rest</title>
+      <link>https://www.funkycloudmedina.com/tags/rest/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/rest/</guid>
       <description></description>
     </item>
     
@@ -249,9 +294,27 @@
     <item>
       <title>Vmware</title>
       <link>https://www.funkycloudmedina.com/tags/vmware/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/vmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vrealize Orchestrator</title>
+      <link>https://www.funkycloudmedina.com/tags/vrealize-orchestrator/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/vrealize-orchestrator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vro</title>
+      <link>https://www.funkycloudmedina.com/tags/vro/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/vro/</guid>
       <description></description>
     </item>
     

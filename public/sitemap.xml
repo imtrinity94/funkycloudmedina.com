@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.funkycloudmedina.com/2018/02/enumerate-vro-workflow-inputs-into-a-json-object/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/2018/02/execute-hp-oo-v10-flows-from-vrealize-orchestrator/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/2018/02/my-humble-homelab---version-1/</loc>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/</loc>
     <lastmod>2018-02-20T00:00:00+00:00</lastmod>
   </url>
@@ -179,7 +194,7 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/</loc>
-    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,8 +211,32 @@
   </url>
   
   <url>
+    <loc>https://www.funkycloudmedina.com/tags/homelab/</loc>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/hp/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/hp-oo/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.funkycloudmedina.com/tags/hugo/</loc>
     <lastmod>2018-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/json/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -215,19 +254,25 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/post/</loc>
-    <lastmod>2018-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/professional-development/</loc>
-    <lastmod>2017-08-29T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/psc/</loc>
     <lastmod>2017-04-26T17:46:00+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/rest/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -286,7 +331,19 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/vmware/</loc>
-    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/vrealize-orchestrator/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/vro/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

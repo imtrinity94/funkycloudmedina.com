@@ -7,10 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Enumerate vRO Workflow Inputs into a JSON object</title>
+      <link>https://www.funkycloudmedina.com/2018/02/enumerate-vro-workflow-inputs-into-a-json-object/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/enumerate-vro-workflow-inputs-into-a-json-object/</guid>
+      <description>Just this week I had to create a JSON object that contained all of the workflow input parameters and their respective values. While I can&amp;rsquo;t guarantee this is the best way to do it, it definitely works.
+I&amp;rsquo;ve tried to keep the comments succinct so if you have any questions please ask.
+Code // Get all input parameters for the parent workflow var inParamsArray = workflow.rootWorkflow.inParameters; // Get all input parameters for the current workflow to search through later var paramFinder = workflow.</description>
+    </item>
+    
+    <item>
+      <title>Execute HP-OO v10 flows from vRealize Orchestrator</title>
+      <link>https://www.funkycloudmedina.com/2018/02/execute-hp-oo-v10-flows-from-vrealize-orchestrator/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/execute-hp-oo-v10-flows-from-vrealize-orchestrator/</guid>
+      <description>Have you used the HTTP REST plugin in vRealize Orchestrator (vRO) before? It&amp;rsquo;s a fantastic plugin that really pushes the envelope on what you can integrate with vRO. Here&amp;rsquo;s a quick rundown of how you configure your REST operations:
+ Configure a REST endpoint. Define a REST operation against the specified endpoint. Create a workflow from the new REST operation to use in your workflows.  These steps are easy to do, but following this method only support a handful of authentication methods and you can&amp;rsquo;t define additional HTTP headers in your REST operations when you create them.</description>
+    </item>
+    
+    <item>
+      <title>My humble homelab - Version 1</title>
+      <link>https://www.funkycloudmedina.com/2018/02/my-humble-homelab---version-1/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/my-humble-homelab---version-1/</guid>
+      <description>Like many professionals in this industry, I have a homelab. Who would need a homelab anymore with the cloud as prevalent as it is? Well, someone who specialises in private on-premises clouds and the work required to make it a hybrid cloud. And to be honest, I love it. I get to build something that is truly mine with my own constraints and requirements and still try to reach maximum usefulness for the hardware.</description>
+    </item>
     
     <item>
       <title>Auto deploy a Hugo website from GitHub to S3 - Part 2</title>

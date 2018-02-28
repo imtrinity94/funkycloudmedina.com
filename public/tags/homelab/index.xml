@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab on Funky Cloud Medina</title>
+    <link>https://www.funkycloudmedina.com/tags/homelab/</link>
+    <description>Recent content in Homelab on Funky Cloud Medina</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 21 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.funkycloudmedina.com/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My humble homelab - Version 1</title>
+      <link>https://www.funkycloudmedina.com/2018/02/my-humble-homelab---version-1/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/02/my-humble-homelab---version-1/</guid>
+      <description>Like many professionals in this industry, I have a homelab. Who would need a homelab anymore with the cloud as prevalent as it is? Well, someone who specialises in private on-premises clouds and the work required to make it a hybrid cloud. And to be honest, I love it. I get to build something that is truly mine with my own constraints and requirements and still try to reach maximum usefulness for the hardware.</description>
+    </item>
+    
+  </channel>
+</rss>
