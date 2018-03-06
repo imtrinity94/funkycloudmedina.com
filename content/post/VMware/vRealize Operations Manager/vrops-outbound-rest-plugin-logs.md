@@ -10,7 +10,7 @@ A quick post today! I was trying to configure the vRealize Operations Manager Ou
 
 I tried looking around the vROPs Logs section under Administration > Support > Logs but couldn't find anything specific for Outbound Notification plugins. A spot of Googling left me with plenty of information about making a REST call **to** vROPs but nothing **from** it. 
 
-So, without further delay, the Outbound notification logs are in the  log files under **/data/vcops/log**. I usually run the following command to tail the analytics log files while I'm troubleshooting:
+So, without further delay, the Outbound notification logs are in the **analytics** log files under **/data/vcops/log**. I usually run the following command to tail the analytics log files while I'm troubleshooting:
 
     tail -f analytics*.log | grep {hostname-your-POSTing-to}
 
