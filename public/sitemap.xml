@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.funkycloudmedina.com/2018/02/enumerate-vro-workflow-inputs-into-a-json-object/</loc>
-    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <loc>https://www.funkycloudmedina.com/2018/03/vrealize-operations-manager---outbound-rest-notification-log-location/</loc>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.funkycloudmedina.com/2018/02/execute-hp-oo-v10-flows-from-vrealize-orchestrator/</loc>
+    <loc>https://www.funkycloudmedina.com/2018/02/enumerate-vro-workflow-inputs-into-a-json-object/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -194,7 +194,7 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/</loc>
-    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -213,18 +213,6 @@
   <url>
     <loc>https://www.funkycloudmedina.com/tags/homelab/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.funkycloudmedina.com/tags/hp/</loc>
-    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.funkycloudmedina.com/tags/hp-oo/</loc>
-    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -254,7 +242,7 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/post/</loc>
-    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -272,7 +260,7 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/rest/</loc>
-    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -331,7 +319,13 @@
   
   <url>
     <loc>https://www.funkycloudmedina.com/tags/vmware/</loc>
-    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.funkycloudmedina.com/tags/vrealize-operations-manager/</loc>
+    <lastmod>2018-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

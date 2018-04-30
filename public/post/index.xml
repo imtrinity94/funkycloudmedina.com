@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 23 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vRealize Operations Manager - Outbound REST Notification log location</title>
+      <link>https://www.funkycloudmedina.com/2018/03/vrealize-operations-manager---outbound-rest-notification-log-location/</link>
+      <pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/03/vrealize-operations-manager---outbound-rest-notification-log-location/</guid>
+      <description>A quick post today! I was trying to configure the vRealize Operations Manager Outbound REST notification plugin recently and I was having a few issues doing a POST or PUT operation against the specified endpoint. Specifically, I was getting the following message:
+ Test was not successful: Failed to post or put to the server.
+ I tried looking around the vROPs Logs section under Administration &amp;gt; Support &amp;gt; Logs but couldn&amp;rsquo;t find anything specific for Outbound Notification plugins.</description>
+    </item>
     
     <item>
       <title>Enumerate vRO Workflow Inputs into a JSON object</title>
@@ -21,16 +32,6 @@
       <description>Just this week I had to create a JSON object that contained all of the workflow input parameters and their respective values. While I can&amp;rsquo;t guarantee this is the best way to do it, it definitely works.
 I&amp;rsquo;ve tried to keep the comments succinct so if you have any questions please ask.
 Code // Get all input parameters for the parent workflow var inParamsArray = workflow.rootWorkflow.inParameters; // Get all input parameters for the current workflow to search through later var paramFinder = workflow.</description>
-    </item>
-    
-    <item>
-      <title>Execute HP-OO v10 flows from vRealize Orchestrator</title>
-      <link>https://www.funkycloudmedina.com/2018/02/execute-hp-oo-v10-flows-from-vrealize-orchestrator/</link>
-      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.funkycloudmedina.com/2018/02/execute-hp-oo-v10-flows-from-vrealize-orchestrator/</guid>
-      <description>Have you used the HTTP REST plugin in vRealize Orchestrator (vRO) before? It&amp;rsquo;s a fantastic plugin that really pushes the envelope on what you can integrate with vRO. Here&amp;rsquo;s a quick rundown of how you configure your REST operations:
- Configure a REST endpoint. Define a REST operation against the specified endpoint. Create a workflow from the new REST operation to use in your workflows.  These steps are easy to do, but following this method only support a handful of authentication methods and you can&amp;rsquo;t define additional HTTP headers in your REST operations when you create them.</description>
     </item>
     
     <item>

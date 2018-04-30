@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.31.1" />
 
-  <title>PSC 6.0U3 not respecting certool.cfg settings when generating VMCA CSR &middot; Funky Cloud Medina</title>
+  <title>vRealize Operations Manager - Outbound REST Notification log location &middot; Funky Cloud Medina</title>
 
   
   
@@ -212,7 +212,7 @@
 
 
 <div class="header">
-  <h1>PSC 6.0U3 not respecting certool.cfg settings when generating VMCA CSR</h1>
+  <h1>vRealize Operations Manager - Outbound REST Notification log location</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -221,7 +221,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>26 April 2017</time>
+    <time>06 March 2018</time>
   </div>
 
   
@@ -236,13 +236,9 @@
     
       <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vmware">VMware</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vsphere">vSphere</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vrealize-operations-manager">vRealize Operations Manager</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/vcenter">vCenter</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/psc">PSC</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/certificates">Certificates</a>
+      <a class="post-taxonomy-tag" href="https://www.funkycloudmedina.com/tags/rest">REST</a>
     
   </div>
   
@@ -250,56 +246,33 @@
 
 </div>
 
-  <p>After a very successful and quick migration from Windows SSO 5.5 U3e installation to a Platform Services Controller v6.0U3 appliance I was ready to get my VMCA into action.</p>
+  <p>A quick post today! I was trying to configure the vRealize Operations Manager Outbound REST notification plugin recently and I was having a few issues doing a POST or PUT operation against the specified endpoint. Specifically, I was getting the following message:</p>
 
-<p>We have a corporate internal Microsoft CA with the VMware certificate templates already created as per <a href="https://kb.vmware.com/selfservice/search.do?cmd=displayKC&amp;docType=kc&amp;docTypeID=DT_KB_1_1&amp;externalId=2112009">VMware KB 2112009</a>. Everything was coming up Milhouse, until CSR generation time using the &lsquo;certificate-manager&rsquo; on the PSCs.</p>
+<blockquote>
+<p>Test was not successful: Failed to post or put to the server.</p>
+</blockquote>
 
-<p>After stepping through the &lsquo;certificate-manager&rsquo; wizard and having the CSR and private key files sent to a directory of my choosing, I quickly inspected the CSR using openssl to make sure I was on the right track:</p>
+<p>I tried looking around the vROPs Logs section under Administration &gt; Support &gt; Logs but couldn&rsquo;t find anything specific for Outbound Notification plugins. A spot of Googling left me with plenty of information about making a REST call <strong>to</strong> vROPs but nothing <strong>from</strong> it.</p>
 
-<pre><code>openssl req -in vmca_issued_csr.csr -noout -text
+<p>So, without further delay, the Outbound notification logs are in the <strong>analytics</strong> log files under <strong>/data/vcops/log</strong>. I usually run the following command to tail the analytics log files while I&rsquo;m troubleshooting:</p>
+
+<pre><code>tail -f analytics*.log | grep {hostname-your-POSTing-to}
 </code></pre>
 
-<p>My CSR still had the old self-signed details of the PSC node! Sure, it was marked as a certificate authority, but contained all the default VMware self-signed details.</p>
-
-<p>I had a look in the VMware pubs (specifically <a href="https://pubs.vmware.com/vsphere-60/index.jsp#com.vmware.vsphere.security.doc/GUID-4758F58D-2DF0-42EB-B9A0-28DF6C13F45E.html">this bit</a>) and found that it&rsquo;s possible to generate the CSR with my own config file. Using the &ldquo;certool.cfg&rdquo; template config file in <strong>/usr/lib/vmware-vmca/share/config</strong>, I quickly spun out a config file to match my VMCA node details and stuck it in /tmp for the time being.</p>
-
-<p>Here is how you use certool command:</p>
-
-<pre><code>/usr/lib/vmware-vmca/bin/certool --gencsr --privkey={destination of private key} --pubkey={destination of public key} --csrfile={destination of new CSR} --config={the config file I created}
-</code></pre>
-
-<p>And here is what I ran:</p>
-
-<pre><code>/usr/lib/vmware-vmca/bin/certool --gencsr --privkey=/root/vmca_private.key --pubkey=/root/vmca_public.key --csrfile=/root/vmca_req.csr --config=/tmp/vmca.cfg
-</code></pre>
-
-<p>Obviously, you can name the files whatever you like.</p>
-
-<p>While this seems like it should&rsquo;ve worked and should churn out a VMCA compatible intermediate CSR, it doesn&rsquo;t. It only creates a CSR for a normal &lsquo;machine&rsquo; certificate (compared to what I wanted which was a CA signing cert). I couldn&rsquo;t figure out the config requirements to generate a CSR for a CA. But how was the certificate-manager doing it?</p>
-
-<p>Certificate-manager is actually generating a CSR from an existing certificate while using a config file to overwrite most of the parameters. The certificate it uses is the default VMCA self-signed root certificate, and the config file is made up from your answers in the certificate-manager wizard. Cool! Maybe I&rsquo;ll try this manually using the certool instead, thinking certificate-manager has regressed in Update 3. Referencing my previously crafted cartoon.cfg file in /tmp, here&rsquo;s what I ran:</p>
-
-<pre><code>/usr/lib/vmware-VMCA/bin/certool --gencsrfromexistingcert --privkey=/root/vmca_private.key --pubkey=/root/vmca_public.key --csrfile=/root/vmca_req.csr --certfile=/etc/vmware-vmca/*************
-</code></pre>
-
-<p>Unfortunately, this didn&rsquo;t work either. I still ended up with a CSR with all the details of a self signed VMCA. It definitely looks like the 6.0U3 certool has regressed and is experiencing a similar bug to 6.0U1 (<a href="https://docs.vmware.com/en/VMware-vSphere/6.0/rn/vsphere-vcenter-server-60u1b-release-notes.html">6.0U1 release notes</a>).</p>
-
-<p>The only way I was able to get around it was using a temporary 6.0U2 PSC machine and using the certificate-manager tool to create the CSR and private key. The CSR and key were taken off the temporary PSC, submitted and approved to my enterprise CA with great success. I was able to use the 6.0U3 certool to install the new VMCA intermediate certificate.</p>
-
-<p>Let me know in the comments if you found a fix or are experiencing the same issue.</p>
+<p>Giant shoutout to <strong>johndias</strong> on the VMware {code} Slack channel who pointed me straight to this. It was too good not to share.</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://www.funkycloudmedina.com/2018/02/enumerate-vro-workflow-inputs-into-a-json-object/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://www.funkycloudmedina.com/2017/04/empty-inventory-after-sso-v5.5-to-psc-v6.0-u3-migration/">Empty inventory after SSO v5.5 to PSC v6.0 U3 migration</a>
+      <a href="https://www.funkycloudmedina.com/2018/02/enumerate-vro-workflow-inputs-into-a-json-object/">Enumerate vRO Workflow Inputs into a JSON object</a>
     </nav>
     
   </div>
@@ -308,14 +281,8 @@
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/">CA-signed vCloud Director certificates no longer trusted – SAN missing</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://www.funkycloudmedina.com/2017/07/ca-signed-vcloud-director-certificates-no-longer-trusted--san-missing/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

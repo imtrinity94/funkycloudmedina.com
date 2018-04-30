@@ -23,15 +23,5 @@ I&amp;rsquo;ve tried to keep the comments succinct so if you have any questions 
 Code // Get all input parameters for the parent workflow var inParamsArray = workflow.rootWorkflow.inParameters; // Get all input parameters for the current workflow to search through later var paramFinder = workflow.</description>
     </item>
     
-    <item>
-      <title>Execute HP-OO v10 flows from vRealize Orchestrator</title>
-      <link>https://www.funkycloudmedina.com/2018/02/execute-hp-oo-v10-flows-from-vrealize-orchestrator/</link>
-      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.funkycloudmedina.com/2018/02/execute-hp-oo-v10-flows-from-vrealize-orchestrator/</guid>
-      <description>Have you used the HTTP REST plugin in vRealize Orchestrator (vRO) before? It&amp;rsquo;s a fantastic plugin that really pushes the envelope on what you can integrate with vRO. Here&amp;rsquo;s a quick rundown of how you configure your REST operations:
- Configure a REST endpoint. Define a REST operation against the specified endpoint. Create a workflow from the new REST operation to use in your workflows.  These steps are easy to do, but following this method only support a handful of authentication methods and you can&amp;rsquo;t define additional HTTP headers in your REST operations when you create them.</description>
-    </item>
-    
   </channel>
 </rss>
