@@ -37,5 +37,5 @@ ehthumbs.db
 Thumbs.db
 
 # Draft directory
-content/drafts/
-content/drafts/*
+content/post/drafts/
+content/post/drafts/*
