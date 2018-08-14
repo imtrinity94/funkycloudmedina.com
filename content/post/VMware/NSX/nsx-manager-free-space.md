@@ -1,5 +1,5 @@
 ---
-title: "NSX Manager upgrade reports no free space"
+title: "NSX Manager upgrade reports: Insufficient disk space"
 tags: ["VMware", "NSX"]
 date: 2018-08-14
 draft: true
