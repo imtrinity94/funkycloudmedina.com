@@ -2,7 +2,7 @@
 title: "NSX Manager upgrade reports: Insufficient disk space"
 tags: ["VMware", "NSX"]
 date: 2018-08-14
-draft: true
+draft: false
 ---
 
 Have you got an NSX Manager that's done the rounds for the past few years and served you well? Is it time for another upgrade but you're stuck because the disk is full and you've been told:
