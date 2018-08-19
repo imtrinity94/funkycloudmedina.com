@@ -1,7 +1,7 @@
 ---
 title: "vCloud Director metrics - unable to configure metric, conflicts with existing column"
 tags: ["VMware", "vCloud Director", "CassandraDB"]
-date: 2018-08-20
+date: 2018-08-19
 draft: false
 ---
 Recently I spent some time configuring vCloud Director metrics and storing them in a Cassandra cluster. If you have ever stepped outside of the default metrics and tried to provide your own via a Groovy file, you may have hit the following error in the `cell-management-tool.log` log:
