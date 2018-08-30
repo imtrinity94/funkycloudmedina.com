@@ -40,9 +40,18 @@
     </item>
     
     <item>
+      <title>Bmc</title>
+      <link>https://www.funkycloudmedina.com/tags/bmc/</link>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/bmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cassandradb</title>
       <link>https://www.funkycloudmedina.com/tags/cassandradb/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/cassandradb/</guid>
       <description></description>
@@ -132,7 +141,7 @@
     <item>
       <title>Hardware</title>
       <link>https://www.funkycloudmedina.com/tags/hardware/</link>
-      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/hardware/</guid>
       <description></description>
@@ -153,6 +162,15 @@
       <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ipmi</title>
+      <link>https://www.funkycloudmedina.com/tags/ipmi/</link>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/ipmi/</guid>
       <description></description>
     </item>
     
@@ -184,6 +202,15 @@
     </item>
     
     <item>
+      <title>Nsx</title>
+      <link>https://www.funkycloudmedina.com/tags/nsx/</link>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/nsx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Professional Development</title>
       <link>https://www.funkycloudmedina.com/tags/professional-development/</link>
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
@@ -198,6 +225,15 @@
       <pubDate>Wed, 26 Apr 2017 17:46:00 +1000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/psc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quanta</title>
+      <link>https://www.funkycloudmedina.com/tags/quanta/</link>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/tags/quanta/</guid>
       <description></description>
     </item>
     
@@ -258,7 +294,7 @@
     <item>
       <title>Vcloud Director</title>
       <link>https://www.funkycloudmedina.com/tags/vcloud-director/</link>
-      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/vcloud-director/</guid>
       <description></description>
@@ -276,7 +312,7 @@
     <item>
       <title>Vmware</title>
       <link>https://www.funkycloudmedina.com/tags/vmware/</link>
-      <pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/vmware/</guid>
       <description></description>
@@ -294,7 +330,7 @@
     <item>
       <title>Vrealize Orchestrator</title>
       <link>https://www.funkycloudmedina.com/tags/vrealize-orchestrator/</link>
-      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.funkycloudmedina.com/tags/vrealize-orchestrator/</guid>
       <description></description>

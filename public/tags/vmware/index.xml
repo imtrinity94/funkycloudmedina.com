@@ -7,10 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016-2017. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 06 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.funkycloudmedina.com/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>VclAbstractObjectValue - Unable to serialize object</title>
+      <link>https://www.funkycloudmedina.com/2018/08/vclabstractobjectvalue---unable-to-serialize-object/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/08/vclabstractobjectvalue---unable-to-serialize-object/</guid>
+      <description>I&amp;rsquo;ve been working on some automation that will create metadata against objects in vCloud Director using vRealize Orchestrator. If you&amp;rsquo;ve ever had to do this before you&amp;rsquo;ll know how painful it can be to get your head around all of the objects/transformations you need to make before you can even set the metadata to the object.
+First you take the metadata value (in this case a string) and create a new VclMetadataStringValue object.</description>
+    </item>
+    
+    <item>
+      <title>vCloud Director metrics - unable to configure metric, conflicts with existing column</title>
+      <link>https://www.funkycloudmedina.com/2018/08/vcloud-director-metrics---unable-to-configure-metric-conflicts-with-existing-column/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/08/vcloud-director-metrics---unable-to-configure-metric-conflicts-with-existing-column/</guid>
+      <description>Recently I spent some time configuring vCloud Director metrics and storing them in a Cassandra cluster. If you have ever stepped outside of the default metrics and tried to provide your own via a Groovy file, you may have hit the following error in the cell-management-tool.log log:
+Invalid column name **metric** because it conflicts with an existing column  If your Groovy file contains the metric listed in the error message and you&amp;rsquo;ve only listed it once, you&amp;rsquo;re probably thinking &amp;ldquo;where on earth is this duplicate coming from?</description>
+    </item>
+    
+    <item>
+      <title>NSX Manager upgrade reports: Insufficient disk space</title>
+      <link>https://www.funkycloudmedina.com/2018/08/nsx-manager-upgrade-reports-insufficient-disk-space/</link>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.funkycloudmedina.com/2018/08/nsx-manager-upgrade-reports-insufficient-disk-space/</guid>
+      <description>Have you got an NSX Manager that&amp;rsquo;s done the rounds for the past few years and served you well? Is it time for another upgrade but you&amp;rsquo;re stuck because the disk is full and you&amp;rsquo;ve been told:
+Cannot continue upgrade due to errors : Insufficient disk space. Database disk usage is at 87%, but it should be less than 70%. We recommend running a database full vacuum before proceeding with upgrade.</description>
+    </item>
     
     <item>
       <title>vRealize Operations Manager - Outbound REST Notification log location</title>
