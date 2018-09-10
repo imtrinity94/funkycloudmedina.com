@@ -9,6 +9,7 @@ Last year the legendary William Lam ([Virtually Ghetto](https://www.virtuallyghe
 I recently had a need for this feature but in vRealize Orchestrator and in Javascript instead of Powershell so I've re-written it in Javascript. I've included 2 additional script blocks that you can place into Scriptable Tasks or Actions too.
 
 ### Send a string as VM keystrokes to a VM Console
+
 {{< gist TheNewStellW dc20e4d788c52185e1af8e3bd7e16e1a >}}
 
 You'll need the following input parameters defined:
@@ -19,6 +20,7 @@ You'll need the following input parameters defined:
   - Type: String
 
 ### Send CTRL+ALT+DELETE to a VM Console
+
 {{< gist TheNewStellW ea71da549ca461f36a7528c18887caa0 >}}
 
 You'll need only one input parameter defined:
