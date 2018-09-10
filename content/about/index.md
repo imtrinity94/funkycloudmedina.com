@@ -9,3 +9,5 @@ Almost every blog post and tutorial I seem to find online is written around a gr
 I love designing and building out private cloud infrastructure and I'm having an absolute ball working with public cloud offerings and finding new ways of doing things.
 
 Any fixes or workarounds that I've detailed on this site are provided as is. Your environment will probably differ to the one I work in so please don't hunt me down if it doesn't work...
+
+If you're wondering why there are Ads being served on this blog, any money from them goes to supporting my homelab to help bring you even more content.
