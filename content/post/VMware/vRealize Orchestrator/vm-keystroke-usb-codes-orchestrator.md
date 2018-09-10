@@ -1,7 +1,7 @@
 ---
 title: "Sending VM keystrokes using vRealize Orchestrator"
 tags: ["VMware", "vRealize Orchestrator", "Javascript"]
-date: 2018-09-11
+date: 2018-09-10
 draft: false
 ---
 Last year the legendary William Lam ([Virtually Ghetto](https://www.virtuallyghetto.com)) posted a handy Powershell script that can use the vSphere 6.5 API's to send keyboard key strokes to a VM (https://www.virtuallyghetto.com/2017/09/automating-vm-keystrokes-using-the-vsphere-api-powercli.html).
