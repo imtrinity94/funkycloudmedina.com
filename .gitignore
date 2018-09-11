@@ -39,3 +39,4 @@ Thumbs.db
 # Draft directory
 content/post/drafts/
 content/post/drafts/*
+content/post/drafts/*.*
