@@ -37,10 +37,10 @@ I recently nabbed a HP Microserver N54L with a few trash disks and 16GB of memor
 
 I have an incredibly basic networking setup. My entire house runs from an ISP-issued wireless router. All of my homelab network segregation and routing is done by a PFsense VM with VLAN trunking and virtual sub-interfaces.
 
-I'd really love one of those Ubiquiti 24 port managed switches, but I don't think that fits in the budget. Maybe I'll settle for one those fanless HP 24 port L2/L3 managed switches.
+I'd really love one of those Ubiquiti 24 port managed switches, but I don't think that fits in the budget. Maybe I'll settle for one of those fanless HP 24 port L2/L3 managed switches.
 
 # Software
 
 I run the vSphere stack in my homelab as I find the hypervisor to be very lightweight for its capability and the management layer (VCSA) to have a smaller footprint over an equivalently featured System Center + Hyper-V deployment.
 
-On top of vSphere I've got a couple of Windows Server 2016 deployments to run a domain controller and  management server (all of my tools etc).
+On top of vSphere I've got a couple of Windows Server 2016 deployments to run a domain controller and a management server (all of my tools etc).
