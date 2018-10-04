@@ -5,6 +5,10 @@ paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "funkycloudmedina" # Enable comments by entering your Disqus shortname
 googleAnalytics = "UA-105790822-1" # Enable Google Analytics by entering your tracking id
+canonifyurls = true
+
+[permalinks]
+  post = "/:year/:month/:title/"
 
 [Author] # Used in authorbox
   name = "Stellios Williams"
@@ -31,7 +35,7 @@ googleAnalytics = "UA-105790822-1" # Enable Google Analytics by entering your tr
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
-  list = "left"  # Configure layout for list pages
+  list = "right"  # Configure layout for list pages
   single = false # Configure layout for single pages
   # Enable widgets in given order
   # widgets = ["search", "recent", "categories", "taglist", "social"]
