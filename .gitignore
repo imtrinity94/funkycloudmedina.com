@@ -41,7 +41,5 @@ content/post/drafts/
 content/post/drafts/*
 content/post/drafts/*.*
 
-# Public directory. Anything already there is published on S3.
-./public/
-./public/*
-./public/*.*
+# Public directory. Anything already there is published on S3. Ruins it.
+public/
