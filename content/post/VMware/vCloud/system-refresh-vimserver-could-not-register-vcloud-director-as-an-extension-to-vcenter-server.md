@@ -7,9 +7,7 @@ draft: false
 
 While trying to troubleshoot another problem, we tried Refreshing vCloud to vCenter which includes registering/updating the extension. This is when we hit a beauty we’d never seen before:
 
-{{< fluid_imgs
-  "pure-u-1-1|/images/system-refresh-vimserver.png"
->}}
+![system-refresh-vimserver.png](/images/system-refresh-vimserver.png)
 
 Alright, calm down. Probably something with the network, right? And  if it’s not the network then it’s probably DNS. Right? Oh how I wish that were so.
 

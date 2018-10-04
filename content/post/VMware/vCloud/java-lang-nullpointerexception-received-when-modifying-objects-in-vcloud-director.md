@@ -7,9 +7,8 @@ draft: false
 
 Roughly 2 weeks ago one of our vCloud Director tenants reported an error when attempting to increase a disk on their VM. They were told to contact their cloud administrator (yay). When we tried to perform the increase, we received an error we’d never seen before: “java.lang.NullPointerException”.
 
-{{< fluid_imgs
-  "pure-u-1-1|/images/java-null-pointer-exception-1.png"
->}}
+
+![java-null-pointer-exception-1](/images/java-null-pointer-exception-1.png)
 
 Here is what we checked:
 
@@ -84,10 +83,10 @@ FROM vrp
  ON vrp.name LIKE '%' + org_prov_vdc.name + '%'
  JOIN vrp_rp
  ON vrp_rp.vrp_id = vrp.id
- 
+
 WHERE vrp_rp.sub_rp_moref != org_prov_vdc.sub_rp_moref
 ```
- 
+
 The root cause for all of this has not been found. I’m hoping VMware support can provide us with a little more information so I can update this post.
 
 ### Update

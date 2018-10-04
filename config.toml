@@ -1,112 +1,80 @@
-baseURL = "https://www.funkycloudmedina.com/"
-languageCode = "en-us"
+baseurl = "/"
 title = "Funky Cloud Medina"
-theme = "blackburn"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "funkycloudmedina" # Enable comments by entering your Disqus shortname
+googleAnalytics = "UA-105790822-1" # Enable Google Analytics by entering your tracking id
 
-author = "Stellios Williams"
-# Shown in the side menu
-copyright = "&copy; 2016-2017. All rights reserved."
-canonifyurls = true
-paginate = 10
+[Author] # Used in authorbox
+  name = "Stellios Williams"
+  # bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  avatar = "img/avatar.png"
 
-[indexes]
-  tag = "tags"
-  topic = "topics"
+[Params]
+  subtitle = "Getting funky with clouds." # Subtitle of your site. Used in site header
+  description = "Getting funky with clouds." # Site description. Used in meta description
+  copyright = "Stellios Williams" # copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  twitter_cards = true # Enable Twitter Cards if true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  toc = false # Enable Table of Contents
+  post_navigation = true # Show post navigation at bottom of pages if true
+  post_meta = ["date", "categories"] # Order of post meta information. Use ["none"] to turn off completely.
+  postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
+  #postSections = ["blog", "news"] # alternative that shows more than one section's pages
+  #dateformat = "2006-01-02" # change the format of dates
+  #mathjax = true # Enable MathJax
+  #mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path
+  #mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  series = "series"
-  preservetaxonomynames = true
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  # widgets = ["search", "recent", "categories", "taglist", "social"]
+  widgets = ["recent", "categories", "taglist", "social"]
 
-[params]
-  # Shown in the home page
-  subtitle = "Getting funky with clouds."
-  brand = "TheNewStellW"
-  googleAnalytics = "UA-105790822-1"
-  disqus = "funkycloudmedina"
-  # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  highlightjs_extra_languages = ["yaml"]
-  dateFormat = "02 January 2006"
-  # Include any custom CSS and/or JS files
-  # (relative to /static folder)
-  custom_css = ["css/my.css"]
-  custom_js = ["js/my.js"]
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
 
-[permalinks]
-  post = "/:year/:month/:title/"
+[Params.widgets.social]
+  # Enable parts of social widget
+  # facebook = "username"
+  twitter = "TheNewStellW"
+  linkedin = "stellios-williams-2762153b"
+  # telegram = "username"
+  github = "TheNewStellW"
+  # gitlab = "username"
+  # bitbucket = "username"
+  # email = "example@example.com"
+  # google_plus = "profileid"
 
 [menu]
-  # Shown in the side menu.
+  # Shown in the top menu.
   [[menu.main]]
     name = "Home"
     pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 0
+    weight = 100
     identifier = "home"
     url = "/"
   [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 1
+    weight = 120
     identifier = "post"
     url = "/post/"
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 2
+    weight = 130
     identifier = "about"
     url = "/about/"
   [[menu.main]]
     name = "Contact"
     pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 3
+    weight = 140
     url = "/contact/"
-
-[social]
-  # Link your social networking accounts to the side menu
-  # by entering your username or ID.
-
-  # SNS microblogging
-  twitter = "@TheNewStellW"
-  # gnusocial = "*" # Specify href (e.g. https://quitter.se/yourusername)
-  # facebook = "*"
-  # googleplus = "*"
-  # weibo = "*"
-  # tumblr = "*"
-
-  # SNS photo/video sharing
-  # instagram = "*"
-  # flickr = "*"
-  # photo500px = "*"
-  # pinterest = "*"
-  # youtube = "*"
-  # vimeo = "*"
-  # vine = "*"
-  # slideshare = "*"
-
-  # SNS career oriented
-  linkedin = "stellios-williams-2762153b"
-  # xing = "*"
-
-  # SNS news
-  #reddit = "*"
-  #hackernews = "*"
-
-  # Techie
-  github = "TheNewStellW"
-  #gitlab = "*"
-  #bitbucket = "*"
-  #stackoverflow = "*"
-  #serverfault = "*"
-
-  # Gaming
-  #steam = "*"
-  #mobygames = "*"
-
-  # Music
-  #lastfm = "*"
-  #discogs = "*"
-
-  # Other
-  #keybase = "*"

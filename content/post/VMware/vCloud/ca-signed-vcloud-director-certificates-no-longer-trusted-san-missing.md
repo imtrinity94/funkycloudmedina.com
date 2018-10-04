@@ -13,26 +13,24 @@ Some users of the test vCloud deployment reported certificate validation errors 
 
 I dug deeper into the certificate validity message in Chrome and found this:
 
-{{< fluid_imgs
-  "pure-u-1-1|/images/certificate-san-missing-1.png"
->}}
+![certificate-san-missing-1.png](/images/certificate-san-missing-1.png)
 
 I looked around online and found that starting with [Chrome v58](https://www.chromestatus.com/feature/4981025180483584) and Firefox v48 ([only source I could find](https://textslashplain.com/2017/03/10/chrome-deprecates-subject-cn-matching/)), support for SSL certificates without Subject Alternative Names had been deprecated.
 
 This is very interesting! Why would this issue happen to this environment, when I'm almost certain that SAN attributes are included as part of the [VMware doco](http://pubs.vmware.com/vcd-810/index.jsp#com.vmware.vcloud.install.doc_810/GUID-89437328-EE0A-40D3-A939-EB8DD70DC1E3.html). In fact, I'm definitely certain it's there...
 
 ```
-keytool 
+keytool
    -keystore certificates.ks
-   -alias consoleproxy 
+   -alias consoleproxy
    -storepass passwd
    -keypass passwd
    -storetype JCEKS
    -genkeypair
    -keyalg RSA
    -keysize 2048
-   -validity 365 
-   -dname "CN=vcd2.example.com, OU=Engineering, O=Example Corp, L=Palo Alto S=California C=US" 
+   -validity 365
+   -dname "CN=vcd2.example.com, OU=Engineering, O=Example Corp, L=Palo Alto S=California C=US"
    -ext "san=dns:vcd2.example.com,dns:vcd2,ip:10.100.101.10"
 ```
 
