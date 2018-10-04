@@ -13,7 +13,7 @@ canonifyurls = true
 [Author] # Used in authorbox
   name = "Stellios Williams"
   bio = "This is my personal tech related blog for anything private and public cloud related. I love (almost) anything virtual and cloud."
-  avatar = "img/avatar.png"
+  avatar = "images/avatar.png"
 
 [Params]
   subtitle = "Getting funky with clouds." # Subtitle of your site. Used in site header
