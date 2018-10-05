@@ -1,7 +1,7 @@
 ---
 title: "vCloud Director 9.5 has been released!"
 tags: ["VMware", "vCloud Director"]
-date: 2018-10-04
+date: 2018-10-05
 draft: false
 ---
 VMware has released vCloud Director 9.5!
