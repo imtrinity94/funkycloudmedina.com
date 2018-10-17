@@ -156,7 +156,7 @@ def syncS3(path, s3Bucket):
         for file in files:
             full_path = os.path.join(subdir, file)
             with open(full_path, 'rb') as data:
-                bucket.put_object(Key=full_path[len(path)+1:], Body=data)
+                bucket.put_object(Key=full_path[len(path)+1:], Body=data, ContentType='text/html')
     logger.info("Generated site uploaded to S3 successfully.")
 {{< / highlight >}}
 
@@ -338,7 +338,7 @@ def syncS3(path, s3Bucket):
         for file in files:
             full_path = os.path.join(subdir, file)
             with open(full_path, 'rb') as data:
-                bucket.put_object(Key=full_path[len(path)+1:], Body=data)
+                bucket.put_object(Key=full_path[len(path)+1:], Body=data, ContentType='text/html')
     logger.info("Generated site uploaded to S3 successfully.")
 
 def lambda_handler(event, context):
