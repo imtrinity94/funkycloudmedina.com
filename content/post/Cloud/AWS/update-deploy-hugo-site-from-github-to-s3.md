@@ -1,7 +1,7 @@
 ---
 title: "Update to Auto Deploy a Hugo site from GitHub to S3"
 tags: ["AWS", "Hugo", "GitHub", "Lambda", "S3", "Blog", "Python", "API Gateway"]
-date: 2018-10-07
+date: 2018-10-17
 draft: false
 toc: true
 ---
