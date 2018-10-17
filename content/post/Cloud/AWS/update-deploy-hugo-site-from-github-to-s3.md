@@ -1,8 +1,8 @@
 ---
 title: "Update to Auto Deploy a Hugo site from GitHub to S3"
 tags: ["AWS", "Hugo", "GitHub", "Lambda", "S3", "Blog", "Python", "API Gateway"]
-date: 2018-10-04
-draft: true
+date: 2018-10-07
+draft: false
 toc: true
 ---
 If you followed my previous posts on auto deploying a Hugo site from GitHub to S3 ([Part 1](/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-1/), [Part 2](/2018/02/auto-deploy-a-hugo-website-from-github-to-s3---part-2/)) you may have noticed that GitHub is deprecating the GitHub Services Integration mechanism. This is critical to the auto deployment function so we'll need an alternative. To add to my woes, I've found that the Node deployment package and all of its dependencies involves more maintenance than it deserves. I also noticed that the original Node package was only *adding* to the target S3 bucket, not performing a sync or equivalent.
@@ -41,6 +41,7 @@ For this Lambda function you need to:
 - Set the __Runtime__ to "Python 2.7"
 - Set the __Code entry type__ to "Edit code inline"
 - Set the __Handler__ value to "deploy.lambda_handler"
+- Set the __Timeout__ value to 30 seconds.
 
 So go ahead and create the new Lambda function (with the tweaks above). Create the following environment variables too:
 
