@@ -12,4 +12,4 @@ Any fixes or workarounds that I've detailed on this site are provided as is. You
 
 If you're wondering why there are Ads being served on this blog, any money from them goes to supporting my homelab to help bring you even more content.
 
-Any opinions published here are my own unless specified otherwise.
+My postings are my own and don’t necessarily represent VMware’s positions, strategies or opinions.
