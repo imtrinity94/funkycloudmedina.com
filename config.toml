@@ -12,7 +12,7 @@ canonifyurls = true
 
 [Author] # Used in authorbox
   name = "Stellios Williams"
-  bio = "This is my personal tech related blog for anything private and public cloud related. I love (almost) anything virtual and cloud."
+  bio = "Technical Account Manager for VMware. This is my personal tech related blog for anything private and public cloud related. I love (almost) anything virtual and cloud."
   avatar = "images/avatar.png"
 
 [Params]
