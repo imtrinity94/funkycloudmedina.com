@@ -13,3 +13,10 @@ Any fixes or workarounds that I've detailed on this site are provided as is. You
 If you're wondering why there are Ads being served on this blog, any money from them goes to supporting my homelab which I use to test and develop content for the blog (where I've specified as such).
 
 Disclaimer: My postings are my own and don’t necessarily represent VMware’s positions, strategies or opinions.
+
+# Badges and Certifications
+
+In this industry, every vendor and service has their own accreditations, certificates, widgets and collectables. I'll display mine here instead of increasing the width of the header indefinitely to fit them all in.
+
+![cloud-provider.png](/logos/vmware-cloud-provider.png)  ![vexpert-2019](/logos/vexpert-full.png) ![vcix6-dcv-full.png](/logos/vcix6-dcv-full.png) ![mcse-cloud.png](/logos/mcse-cloud.png)
+
